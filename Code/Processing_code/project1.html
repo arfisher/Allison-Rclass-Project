@@ -1,0 +1,2504 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.313">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Allison Fisher">
+<meta name="dcterms.date" content="2023-03-02">
+
+<title>project1</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="project1_files/libs/clipboard/clipboard.min.js"></script>
+<script src="project1_files/libs/quarto-html/quarto.js"></script>
+<script src="project1_files/libs/quarto-html/popper.min.js"></script>
+<script src="project1_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="project1_files/libs/quarto-html/anchor.min.js"></script>
+<link href="project1_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="project1_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="project1_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="project1_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="project1_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">project1</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Allison Fisher </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 2, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="processing-script-data-cleaning-with-code-pulled-in-from-script" class="level1">
+<h1>Processing script (data cleaning) with code pulled in from script</h1>
+<p>This is based on the processingfile_v2.qmd template to pull in chunks of code from the R script.</p>
+</section>
+<section id="setup" class="level1">
+<h1>Setup</h1>
+<p>Pulling in the R script.</p>
+<p>Load needed packages.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#load needed packages. make sure they are installed.</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(dplyr) <span class="co">#for data processing/cleaning</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(tidyr) <span class="co">#for data processing/cleaning</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(skimr) <span class="co">#for nice visualization of data </span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(ggplot2) <span class="co"># for bar plots</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="data-loading" class="level1">
+<h1>Data loading</h1>
+<p>Let’s load the data then make and explore the dictionary.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>data_location <span class="ot">&lt;-</span> <span class="st">"../../Data/Raw_data/penguins_raw_dirty.csv"</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>data_path <span class="ot">&lt;-</span> <span class="st">"../../Data/Raw_data/"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>rawdata <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(data_location, <span class="at">check.names=</span><span class="cn">FALSE</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co"># make and view data dictionary</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>dictionary <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="fu">paste</span>(data_path, <span class="st">"datadictionary.csv"</span>, <span class="at">sep=</span><span class="st">""</span>))</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(dictionary)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>            variable
+1          studyName
+2      Sample Number
+3            Species
+4             Region
+5             Island
+6              Stage
+7      Individual ID
+8  Clutch Completion
+9           Date Egg
+10     Culmen Length
+11      Culmen Depth
+12    Flipper Length
+13         Body Mass
+14               Sex
+15        Delta 15 N
+16        Delta 13 C
+17          Comments
+                                                                                description
+1                       Sampling expedition from which data were collected, generated, etc.
+2                     an integer denoting the continuous numbering sequence for each sample
+3                                           a character string denoting the penguin species
+4                       a character string denoting the region of Palmer LTER sampling grid
+5   a character string denoting the island near Palmer Station where samples were collected
+6                                a character string denoting reproductive stage at sampling
+7                  a character string denoting the unique ID for each individual in dataset
+8   a character string denoting if the study nest observed with a full clutch, i.e., 2 eggs
+9                         a date denoting the date study nest observed with 1 egg (sampled)
+10          a number denoting the length of the dorsal ridge of a bird's bill (millimeters)
+11           a number denoting the depth of the dorsal ridge of a bird's bill (millimeters)
+12                             an integer denoting the length penguin flipper (millimeters)
+13                                        an integer denoting the penguin body mass (grams)
+14                                         a character string denoting the sex of an animal
+15                    a number denoting the measure of the ratio of stable isotopes 15N:14N
+16                    a number denoting the measure of the ratio of stable isotopes 13C:12C
+17          a character string with text providing additional relevant information for data</code></pre>
+</div>
+</div>
+</section>
+<section id="explore-data" class="level1">
+<h1>Explore Data</h1>
+<section id="take-a-look-at-the-data" class="level3">
+<h3 class="anchored" data-anchor-id="take-a-look-at-the-data">Take a look at the data</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># look at the data</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>skimr<span class="sc">::</span><span class="fu">skim</span>(rawdata)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="table table-sm table-striped">
+<caption>Data summary</caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Name</td>
+<td style="text-align: left;">rawdata</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Number of rows</td>
+<td style="text-align: left;">344</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Number of columns</td>
+<td style="text-align: left;">17</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">_______________________</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Column type frequency:</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">character</td>
+<td style="text-align: left;">11</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">numeric</td>
+<td style="text-align: left;">6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">________________________</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Group variables</td>
+<td style="text-align: left;">None</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Variable type: character</strong></p>
+<table class="table table-sm table-striped">
+<colgroup>
+<col style="width: 24%">
+<col style="width: 12%">
+<col style="width: 18%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 7%">
+<col style="width: 11%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: right;">min</th>
+<th style="text-align: right;">max</th>
+<th style="text-align: right;">empty</th>
+<th style="text-align: right;">n_unique</th>
+<th style="text-align: right;">whitespace</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">studyName</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Species</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Region</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Island</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Stage</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Individual ID</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">190</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Clutch Completion</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Date Egg</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Culmen Length (mm)</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">168</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sex</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">0.97</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Comments</td>
+<td style="text-align: right;">290</td>
+<td style="text-align: right;">0.16</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Variable type: numeric</strong></p>
+<table class="table table-sm table-striped">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 9%">
+<col style="width: 13%">
+<col style="width: 7%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 5%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: right;">mean</th>
+<th style="text-align: right;">sd</th>
+<th style="text-align: right;">p0</th>
+<th style="text-align: right;">p25</th>
+<th style="text-align: right;">p50</th>
+<th style="text-align: right;">p75</th>
+<th style="text-align: right;">p100</th>
+<th style="text-align: left;">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Sample Number</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">63.15</td>
+<td style="text-align: right;">40.43</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">29.00</td>
+<td style="text-align: right;">58.00</td>
+<td style="text-align: right;">95.25</td>
+<td style="text-align: right;">152.00</td>
+<td style="text-align: left;">▇▇▆▅▃</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Culmen Depth (mm)</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0.99</td>
+<td style="text-align: right;">17.15</td>
+<td style="text-align: right;">1.97</td>
+<td style="text-align: right;">13.10</td>
+<td style="text-align: right;">15.60</td>
+<td style="text-align: right;">17.30</td>
+<td style="text-align: right;">18.70</td>
+<td style="text-align: right;">21.50</td>
+<td style="text-align: left;">▅▅▇▇▂</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Flipper Length (mm)</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0.99</td>
+<td style="text-align: right;">200.92</td>
+<td style="text-align: right;">14.06</td>
+<td style="text-align: right;">172.00</td>
+<td style="text-align: right;">190.00</td>
+<td style="text-align: right;">197.00</td>
+<td style="text-align: right;">213.00</td>
+<td style="text-align: right;">231.00</td>
+<td style="text-align: left;">▂▇▃▅▂</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Body Mass (g)</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0.99</td>
+<td style="text-align: right;">4159.78</td>
+<td style="text-align: right;">888.53</td>
+<td style="text-align: right;">47.00</td>
+<td style="text-align: right;">3550.00</td>
+<td style="text-align: right;">4000.00</td>
+<td style="text-align: right;">4750.00</td>
+<td style="text-align: right;">6300.00</td>
+<td style="text-align: left;">▁▁▇▇▃</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Delta 15 N (o/oo)</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">0.96</td>
+<td style="text-align: right;">8.73</td>
+<td style="text-align: right;">0.55</td>
+<td style="text-align: right;">7.63</td>
+<td style="text-align: right;">8.30</td>
+<td style="text-align: right;">8.65</td>
+<td style="text-align: right;">9.17</td>
+<td style="text-align: right;">10.03</td>
+<td style="text-align: left;">▃▇▆▅▂</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Delta 13 C (o/oo)</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">0.96</td>
+<td style="text-align: right;">-25.69</td>
+<td style="text-align: right;">0.79</td>
+<td style="text-align: right;">-27.02</td>
+<td style="text-align: right;">-26.32</td>
+<td style="text-align: right;">-25.83</td>
+<td style="text-align: right;">-25.06</td>
+<td style="text-align: right;">-23.79</td>
+<td style="text-align: left;">▆▇▅▅▂</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</section>
+<section id="cleaning" class="level1">
+<h1>Cleaning</h1>
+<section id="species-names" class="level3">
+<h3 class="anchored" data-anchor-id="species-names">Species names</h3>
+<p>Let’s fix the typos in the species names to make them all consistent.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>d1 <span class="ot">&lt;-</span> rawdata</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Fixing species name typos:</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>d1<span class="sc">$</span>Species <span class="ot">&lt;-</span> <span class="fu">sub</span>(<span class="st">"gTin"</span>, <span class="st">"guin"</span>, d1<span class="sc">$</span>Species)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>d1<span class="sc">$</span>Species <span class="ot">&lt;-</span> <span class="fu">sub</span>(<span class="st">"gufn"</span>, <span class="st">"guin"</span>, d1<span class="sc">$</span>Species)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>d1<span class="sc">$</span>Species <span class="ot">&lt;-</span> <span class="fu">sub</span>(<span class="st">"PeOg"</span>, <span class="st">"Peng"</span>, d1<span class="sc">$</span>Species)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>d1<span class="sc">$</span>Species <span class="ot">&lt;-</span> <span class="fu">sub</span>(<span class="st">"deKie"</span>, <span class="st">"delie"</span>, d1<span class="sc">$</span>Species)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>d1<span class="sc">$</span>Species <span class="ot">&lt;-</span> <span class="fu">sub</span>(<span class="st">"eMPe"</span>, <span class="st">"e Pe"</span>, d1<span class="sc">$</span>Species)</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>d1<span class="sc">$</span>Species <span class="ot">&lt;-</span> <span class="fu">sub</span>(<span class="st">"Ven"</span>, <span class="st">"Gen"</span>, d1<span class="sc">$</span>Species)</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>d1<span class="sc">$</span>Species <span class="ot">&lt;-</span> <span class="fu">sub</span>(<span class="st">"Pen"</span>, <span class="st">"pen"</span>, d1<span class="sc">$</span>Species)</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(d1<span class="sc">$</span>Species)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Adelie penguin (Pygoscelis adeliae)"      
+[2] "Gentoo penguin (Pygoscelis papua)"        
+[3] "Chinstrap penguin (Pygoscelis antarctica)"</code></pre>
+</div>
+</div>
+<p>Shorten Species just keeping the three common names “Adelie”, “Gentoo”, and “Chinstrap” and delete the rest of the Species character string.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Shortening species names to common name only (this is a convoluted way to do it but only way I could get rid of the parentheses)</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>d1<span class="sc">$</span>Species <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"[^[:alnum:]]"</span>, <span class="st">""</span>, d1<span class="sc">$</span>Species)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>d1<span class="sc">$</span>Species <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"penguinPygoscelisadeliae"</span>, <span class="st">""</span>, d1<span class="sc">$</span>Species)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>d1<span class="sc">$</span>Species <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"penguinPygoscelispapua"</span>, <span class="st">""</span>, d1<span class="sc">$</span>Species)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>d1<span class="sc">$</span>Species <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"penguinPygoscelisantarctica"</span>, <span class="st">""</span>, d1<span class="sc">$</span>Species)</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(d1<span class="sc">$</span>Species)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Adelie"    "Gentoo"    "Chinstrap"</code></pre>
+</div>
+</div>
+</section>
+<section id="continuous-data" class="level3">
+<h3 class="anchored" data-anchor-id="continuous-data">Continuous data</h3>
+<p>Replace the missing entry for <code>Culmen Length (mm)</code> to NA and coerce the variable to numeric.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>cl <span class="ot">&lt;-</span> d1<span class="sc">$</span><span class="st">`</span><span class="at">Culmen Length (mm)</span><span class="st">`</span> </span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co"># find cl=="missing and replace "missing" with NA</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>cl[ cl <span class="sc">==</span> <span class="st">"missing"</span> ] <span class="ot">&lt;-</span> <span class="cn">NA</span>  </span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co"># coerce to numeric</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>cl <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(cl)  </span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>d1<span class="sc">$</span><span class="st">`</span><span class="at">Culmen Length (mm)</span><span class="st">`</span> <span class="ot">&lt;-</span> cl</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Now let’s fix the Culmen Lengths which are a decimal place off</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>d2 <span class="ot">&lt;-</span> d1 </span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co"># find too large (non NA) Culmen Lengths and divide them by 10 to fix data entry error </span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>cl[ <span class="sc">!</span><span class="fu">is.na</span>(cl) <span class="sc">&amp;</span> cl<span class="sc">&gt;</span><span class="dv">300</span> ]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 429 511 457</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>cl[ <span class="sc">!</span><span class="fu">is.na</span>(cl) <span class="sc">&amp;</span> cl<span class="sc">&gt;</span><span class="dv">300</span> ] <span class="ot">&lt;-</span> cl[ <span class="sc">!</span><span class="fu">is.na</span>(cl) <span class="sc">&amp;</span> cl<span class="sc">&gt;</span><span class="dv">300</span> ]<span class="sc">/</span><span class="dv">10</span>  </span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>d2<span class="sc">$</span><span class="st">`</span><span class="at">Culmen Length (mm)</span><span class="st">`</span> <span class="ot">&lt;-</span> cl</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="now-lets-look-at-body-mass." class="level3">
+<h3 class="anchored" data-anchor-id="now-lets-look-at-body-mass.">Now let’s look at body mass.</h3>
+<p>Get rid of the masses too small to be adults by replacing with NA and dropping them.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get rid of masses which are too tiny to be adults by replacing them with NA and then dropping</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>d3 <span class="ot">&lt;-</span> d2</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>mm <span class="ot">&lt;-</span> d3<span class="sc">$</span><span class="st">`</span><span class="at">Body Mass (g)</span><span class="st">`</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>mm[ mm <span class="sc">&lt;</span> <span class="dv">100</span> ] <span class="ot">&lt;-</span> <span class="cn">NA</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>nas <span class="ot">&lt;-</span> <span class="fu">which</span>( <span class="fu">is.na</span>(mm) )</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>d3 <span class="ot">&lt;-</span> d3[ <span class="sc">-</span>nas, ]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="factors" class="level3">
+<h3 class="anchored" data-anchor-id="factors">Factors</h3>
+<p>We also want to have Species, Sex, and Island coded as a categorical/factor variable:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make Species, Sex, Island categorical variables</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>d3<span class="sc">$</span>Species <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(d3<span class="sc">$</span>Species)</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>d3<span class="sc">$</span>Sex <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(d3<span class="sc">$</span>Sex)</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>d3<span class="sc">$</span>Island <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(d3<span class="sc">$</span>Island)  </span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>    skimr<span class="sc">::</span><span class="fu">skim</span>(d3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="table table-sm table-striped">
+<caption>Data summary</caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Name</td>
+<td style="text-align: left;">d3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Number of rows</td>
+<td style="text-align: left;">339</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Number of columns</td>
+<td style="text-align: left;">17</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">_______________________</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Column type frequency:</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">character</td>
+<td style="text-align: left;">7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">factor</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">numeric</td>
+<td style="text-align: left;">7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">________________________</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Group variables</td>
+<td style="text-align: left;">None</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Variable type: character</strong></p>
+<table class="table table-sm table-striped">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 13%">
+<col style="width: 18%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 7%">
+<col style="width: 11%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: right;">min</th>
+<th style="text-align: right;">max</th>
+<th style="text-align: right;">empty</th>
+<th style="text-align: right;">n_unique</th>
+<th style="text-align: right;">whitespace</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">studyName</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Region</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Stage</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Individual ID</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">190</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Clutch Completion</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Date Egg</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Comments</td>
+<td style="text-align: right;">287</td>
+<td style="text-align: right;">0.15</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Variable type: factor</strong></p>
+<table class="table table-sm table-striped">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 12%">
+<col style="width: 16%">
+<col style="width: 9%">
+<col style="width: 10%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: left;">ordered</th>
+<th style="text-align: right;">n_unique</th>
+<th style="text-align: left;">top_counts</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Species</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: left;">FALSE</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Ade: 151, Gen: 120, Chi: 68</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Island</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: left;">FALSE</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Bis: 164, Dre: 124, Tor: 51</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sex</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">0.97</td>
+<td style="text-align: left;">FALSE</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">MAL: 168, FEM: 162</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Variable type: numeric</strong></p>
+<table class="table table-sm table-striped">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 9%">
+<col style="width: 13%">
+<col style="width: 7%">
+<col style="width: 6%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 5%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: right;">mean</th>
+<th style="text-align: right;">sd</th>
+<th style="text-align: right;">p0</th>
+<th style="text-align: right;">p25</th>
+<th style="text-align: right;">p50</th>
+<th style="text-align: right;">p75</th>
+<th style="text-align: right;">p100</th>
+<th style="text-align: left;">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Sample Number</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">63.13</td>
+<td style="text-align: right;">40.33</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">29.50</td>
+<td style="text-align: right;">58.00</td>
+<td style="text-align: right;">95.00</td>
+<td style="text-align: right;">152.00</td>
+<td style="text-align: left;">▇▇▆▅▃</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Culmen Length (mm)</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">43.90</td>
+<td style="text-align: right;">5.47</td>
+<td style="text-align: right;">32.10</td>
+<td style="text-align: right;">39.20</td>
+<td style="text-align: right;">44.40</td>
+<td style="text-align: right;">48.50</td>
+<td style="text-align: right;">59.60</td>
+<td style="text-align: left;">▅▇▇▆▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Culmen Depth (mm)</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">17.17</td>
+<td style="text-align: right;">1.97</td>
+<td style="text-align: right;">13.10</td>
+<td style="text-align: right;">15.65</td>
+<td style="text-align: right;">17.30</td>
+<td style="text-align: right;">18.70</td>
+<td style="text-align: right;">21.50</td>
+<td style="text-align: left;">▅▅▇▇▂</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Flipper Length (mm)</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">200.79</td>
+<td style="text-align: right;">14.05</td>
+<td style="text-align: right;">172.00</td>
+<td style="text-align: right;">190.00</td>
+<td style="text-align: right;">197.00</td>
+<td style="text-align: right;">213.00</td>
+<td style="text-align: right;">231.00</td>
+<td style="text-align: left;">▂▇▃▅▂</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Body Mass (g)</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">4196.17</td>
+<td style="text-align: right;">803.20</td>
+<td style="text-align: right;">2700.00</td>
+<td style="text-align: right;">3550.00</td>
+<td style="text-align: right;">4000.00</td>
+<td style="text-align: right;">4750.00</td>
+<td style="text-align: right;">6300.00</td>
+<td style="text-align: left;">▃▇▅▃▂</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Delta 15 N (o/oo)</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">0.96</td>
+<td style="text-align: right;">8.74</td>
+<td style="text-align: right;">0.55</td>
+<td style="text-align: right;">7.63</td>
+<td style="text-align: right;">8.30</td>
+<td style="text-align: right;">8.66</td>
+<td style="text-align: right;">9.18</td>
+<td style="text-align: right;">10.03</td>
+<td style="text-align: left;">▃▇▆▅▂</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Delta 13 C (o/oo)</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">0.97</td>
+<td style="text-align: right;">-25.68</td>
+<td style="text-align: right;">0.79</td>
+<td style="text-align: right;">-27.02</td>
+<td style="text-align: right;">-26.32</td>
+<td style="text-align: right;">-25.83</td>
+<td style="text-align: right;">-25.06</td>
+<td style="text-align: right;">-23.79</td>
+<td style="text-align: left;">▆▇▅▅▂</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</section>
+<section id="bivariate-plots" class="level1">
+<h1>Bivariate Plots</h1>
+<p>Make some plots to check the data for outliers. We can also look at the distributions of categorical variables using ggplot!</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make bivariate plots for continous data to check for errors and distribution of points</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(d3<span class="sc">$</span><span class="st">`</span><span class="at">Body Mass (g)</span><span class="st">`</span>, d3<span class="sc">$</span><span class="st">`</span><span class="at">Culmen Length (mm)</span><span class="st">`</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="project1_files/figure-html/exploratoryplots-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(d3<span class="sc">$</span><span class="st">`</span><span class="at">Body Mass (g)</span><span class="st">`</span>, d3<span class="sc">$</span><span class="st">`</span><span class="at">Culmen Depth (mm)</span><span class="st">`</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="project1_files/figure-html/exploratoryplots-2.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(d3<span class="sc">$</span><span class="st">`</span><span class="at">Body Mass (g)</span><span class="st">`</span>, d3<span class="sc">$</span><span class="st">`</span><span class="at">Flipper Length (mm)</span><span class="st">`</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="project1_files/figure-html/exploratoryplots-3.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(d3<span class="sc">$</span><span class="st">`</span><span class="at">Delta 15 N (o/oo)</span><span class="st">`</span>, d3<span class="sc">$</span><span class="st">`</span><span class="at">Delta 13 C (o/oo)</span><span class="st">`</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="project1_files/figure-html/exploratoryplots-4.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make histograms </span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(d3<span class="sc">$</span><span class="st">`</span><span class="at">Body Mass (g)</span><span class="st">`</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="project1_files/figure-html/exploratoryplots-5.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(d3<span class="sc">$</span><span class="st">`</span><span class="at">Culmen Length (mm)</span><span class="st">`</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="project1_files/figure-html/exploratoryplots-6.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(d3<span class="sc">$</span><span class="st">`</span><span class="at">Culmen Depth (mm)</span><span class="st">`</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="project1_files/figure-html/exploratoryplots-7.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(d3<span class="sc">$</span><span class="st">`</span><span class="at">Flipper Length (mm)</span><span class="st">`</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="project1_files/figure-html/exploratoryplots-8.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(d3<span class="sc">$</span><span class="st">`</span><span class="at">Delta 15 N (o/oo)</span><span class="st">`</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="project1_files/figure-html/exploratoryplots-9.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(d3<span class="sc">$</span><span class="st">`</span><span class="at">Delta 13 C (o/oo)</span><span class="st">`</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="project1_files/figure-html/exploratoryplots-10.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make bar plots of counts for categorical variables</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(d3, <span class="fu">aes</span>(<span class="at">x=</span>Species))<span class="sc">+</span><span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="project1_files/figure-html/exploratoryplots-11.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(d3, <span class="fu">aes</span>(<span class="at">x=</span>Island))<span class="sc">+</span><span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="project1_files/figure-html/exploratoryplots-12.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(d3, <span class="fu">aes</span>(<span class="at">x=</span>Sex))<span class="sc">+</span><span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="project1_files/figure-html/exploratoryplots-13.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="finalize-your-cleaned-dataset." class="level1">
+<h1>Finalize your cleaned dataset.</h1>
+<p>I decided to drop variables studyName and Stage (they were all the same).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># removing useless columns studyName, Stage</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>d4 <span class="ot">&lt;-</span> <span class="fu">subset</span>(d3, <span class="at">select =</span> <span class="sc">-</span><span class="fu">c</span>(studyName, Stage))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="save-data" class="level1">
+<h1>Save data</h1>
+<p>Now we make the cleaned data easy to save and save it as both .rds and .csv format</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>processeddata <span class="ot">&lt;-</span> d4      <span class="co"># change if you did more steps</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="co"># location to save file</span></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>save_data_location <span class="ot">&lt;-</span> <span class="st">"../../Data/Processed_data/processeddata.rds"</span></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(processeddata, <span class="at">file =</span> save_data_location)</span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>save_data_location_csv <span class="ot">&lt;-</span> <span class="st">"../../Data/Processed_data/processeddata.csv"</span></span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(processeddata, <span class="at">file =</span> save_data_location_csv, <span class="at">row.names=</span><span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="view-data-once-more" class="level1">
+<h1>View data once more</h1>
+<p>Let’s have a final look at the cleaned table, FYI</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(d4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    Sample Number   Species Region    Island Individual ID Clutch Completion
+1               1    Adelie Anvers Torgersen          N1A1               Yes
+2               2    Adelie Anvers Torgersen          N1A2               Yes
+3               3    Adelie Anvers Torgersen          N2A1               Yes
+5               5    Adelie Anvers Torgersen          N3A1               Yes
+6               6    Adelie Anvers Torgersen          N3A2               Yes
+7               7    Adelie Anvers Torgersen          N4A1                No
+8               8    Adelie Anvers Torgersen          N4A2                No
+9               9    Adelie Anvers Torgersen          N5A1               Yes
+10             10    Adelie Anvers Torgersen          N5A2               Yes
+11             11    Adelie Anvers Torgersen          N6A1               Yes
+12             12    Adelie Anvers Torgersen          N6A2               Yes
+13             13    Adelie Anvers Torgersen          N7A1               Yes
+14             14    Adelie Anvers Torgersen          N7A2               Yes
+15             15    Adelie Anvers Torgersen          N8A1               Yes
+16             16    Adelie Anvers Torgersen          N8A2               Yes
+17             17    Adelie Anvers Torgersen          N9A1               Yes
+18             18    Adelie Anvers Torgersen          N9A2               Yes
+19             19    Adelie Anvers Torgersen         N10A1               Yes
+20             20    Adelie Anvers Torgersen         N10A2               Yes
+21             21    Adelie Anvers    Biscoe         N11A1               Yes
+22             22    Adelie Anvers    Biscoe         N11A2               Yes
+23             23    Adelie Anvers    Biscoe         N12A1               Yes
+24             24    Adelie Anvers    Biscoe         N12A2               Yes
+25             25    Adelie Anvers    Biscoe         N13A1               Yes
+26             26    Adelie Anvers    Biscoe         N13A2               Yes
+27             27    Adelie Anvers    Biscoe         N17A1               Yes
+28             28    Adelie Anvers    Biscoe         N17A2               Yes
+29             29    Adelie Anvers    Biscoe         N18A1                No
+30             30    Adelie Anvers    Biscoe         N18A2                No
+31             31    Adelie Anvers     Dream         N21A1               Yes
+32             32    Adelie Anvers     Dream         N21A2               Yes
+33             33    Adelie Anvers     Dream         N22A1               Yes
+34             34    Adelie Anvers     Dream         N22A2               Yes
+35             35    Adelie Anvers     Dream         N23A1               Yes
+36             36    Adelie Anvers     Dream         N23A2               Yes
+37             37    Adelie Anvers     Dream         N24A1               Yes
+38             38    Adelie Anvers     Dream         N24A2               Yes
+39             39    Adelie Anvers     Dream         N25A1                No
+40             40    Adelie Anvers     Dream         N25A2                No
+41             41    Adelie Anvers     Dream         N26A1               Yes
+42             42    Adelie Anvers     Dream         N26A2               Yes
+43             43    Adelie Anvers     Dream         N27A1               Yes
+44             44    Adelie Anvers     Dream         N27A2               Yes
+45             45    Adelie Anvers     Dream         N28A1               Yes
+46             46    Adelie Anvers     Dream         N28A2               Yes
+47             47    Adelie Anvers     Dream         N29A1               Yes
+48             48    Adelie Anvers     Dream         N29A2               Yes
+49             49    Adelie Anvers     Dream         N30A1               Yes
+50             50    Adelie Anvers     Dream         N30A2               Yes
+51             51    Adelie Anvers    Biscoe         N21A1               Yes
+52             52    Adelie Anvers    Biscoe         N21A2               Yes
+53             53    Adelie Anvers    Biscoe         N22A1               Yes
+54             54    Adelie Anvers    Biscoe         N22A2               Yes
+55             55    Adelie Anvers    Biscoe         N23A1               Yes
+56             56    Adelie Anvers    Biscoe         N23A2               Yes
+57             57    Adelie Anvers    Biscoe         N24A1               Yes
+58             58    Adelie Anvers    Biscoe         N24A2               Yes
+59             59    Adelie Anvers    Biscoe         N25A1               Yes
+60             60    Adelie Anvers    Biscoe         N25A2               Yes
+61             61    Adelie Anvers    Biscoe         N27A1               Yes
+62             62    Adelie Anvers    Biscoe         N27A2               Yes
+63             63    Adelie Anvers    Biscoe         N28A1               Yes
+64             64    Adelie Anvers    Biscoe         N28A2               Yes
+65             65    Adelie Anvers    Biscoe         N29A1               Yes
+66             66    Adelie Anvers    Biscoe         N29A2               Yes
+67             67    Adelie Anvers    Biscoe         N30A1               Yes
+68             68    Adelie Anvers    Biscoe         N30A2               Yes
+69             69    Adelie Anvers Torgersen         N32A1                No
+70             70    Adelie Anvers Torgersen         N32A2                No
+71             71    Adelie Anvers Torgersen         N34A1               Yes
+72             72    Adelie Anvers Torgersen         N34A2               Yes
+73             73    Adelie Anvers Torgersen         N35A1               Yes
+74             74    Adelie Anvers Torgersen         N35A2               Yes
+75             75    Adelie Anvers Torgersen         N36A1               Yes
+76             76    Adelie Anvers Torgersen         N36A2               Yes
+77             77    Adelie Anvers Torgersen         N37A1               Yes
+78             78    Adelie Anvers Torgersen         N37A2               Yes
+79             79    Adelie Anvers Torgersen         N38A1               Yes
+80             80    Adelie Anvers Torgersen         N38A2               Yes
+81             81    Adelie Anvers Torgersen         N39A1               Yes
+82             82    Adelie Anvers Torgersen         N39A2               Yes
+83             83    Adelie Anvers Torgersen         N40A1               Yes
+84             84    Adelie Anvers Torgersen         N40A2               Yes
+85             85    Adelie Anvers     Dream         N41A1               Yes
+86             86    Adelie Anvers     Dream         N41A2               Yes
+87             87    Adelie Anvers     Dream         N42A1               Yes
+88             88    Adelie Anvers     Dream         N42A2               Yes
+89             89    Adelie Anvers     Dream         N44A1               Yes
+90             90    Adelie Anvers     Dream         N44A2               Yes
+91             91    Adelie Anvers     Dream         N45A1               Yes
+92             92    Adelie Anvers     Dream         N45A2               Yes
+93             93    Adelie Anvers     Dream         N46A1               Yes
+94             94    Adelie Anvers     Dream         N46A2               Yes
+95             95    Adelie Anvers     Dream         N48A1               Yes
+96             96    Adelie Anvers     Dream         N48A2               Yes
+97             97    Adelie Anvers     Dream         N49A1               Yes
+98             98    Adelie Anvers     Dream         N49A2               Yes
+99             99    Adelie Anvers     Dream         N50A1               Yes
+100           100    Adelie Anvers     Dream         N50A2               Yes
+101           101    Adelie Anvers    Biscoe         N47A1               Yes
+102           102    Adelie Anvers    Biscoe         N47A2               Yes
+103           103    Adelie Anvers    Biscoe         N49A1               Yes
+104           104    Adelie Anvers    Biscoe         N49A2               Yes
+105           105    Adelie Anvers    Biscoe         N51A1               Yes
+106           106    Adelie Anvers    Biscoe         N51A2               Yes
+107           107    Adelie Anvers    Biscoe         N53A1               Yes
+108           108    Adelie Anvers    Biscoe         N53A2               Yes
+109           109    Adelie Anvers    Biscoe         N55A1               Yes
+110           110    Adelie Anvers    Biscoe         N55A2               Yes
+111           111    Adelie Anvers    Biscoe         N58A1               Yes
+112           112    Adelie Anvers    Biscoe         N58A2               Yes
+113           113    Adelie Anvers    Biscoe         N60A1               Yes
+114           114    Adelie Anvers    Biscoe         N60A2               Yes
+115           115    Adelie Anvers    Biscoe         N61A1               Yes
+116           116    Adelie Anvers    Biscoe         N61A2               Yes
+117           117    Adelie Anvers Torgersen         N63A1               Yes
+118           118    Adelie Anvers Torgersen         N63A2               Yes
+119           119    Adelie Anvers Torgersen         N64A1               Yes
+120           120    Adelie Anvers Torgersen         N64A2               Yes
+121           121    Adelie Anvers Torgersen         N66A1                No
+122           122    Adelie Anvers Torgersen         N66A2                No
+123           123    Adelie Anvers Torgersen         N67A1               Yes
+124           124    Adelie Anvers Torgersen         N67A2               Yes
+125           125    Adelie Anvers Torgersen         N69A1               Yes
+126           126    Adelie Anvers Torgersen         N69A2               Yes
+127           127    Adelie Anvers Torgersen         N71A1               Yes
+128           128    Adelie Anvers Torgersen         N71A2               Yes
+129           129    Adelie Anvers Torgersen         N72A1               Yes
+130           130    Adelie Anvers Torgersen         N72A2               Yes
+131           131    Adelie Anvers Torgersen         N73A1                No
+132           132    Adelie Anvers Torgersen         N73A2                No
+133           133    Adelie Anvers     Dream         N76A1               Yes
+134           134    Adelie Anvers     Dream         N76A2               Yes
+135           135    Adelie Anvers     Dream         N77A1               Yes
+136           136    Adelie Anvers     Dream         N77A2               Yes
+137           137    Adelie Anvers     Dream         N78A1               Yes
+138           138    Adelie Anvers     Dream         N78A2               Yes
+139           139    Adelie Anvers     Dream         N79A1                No
+140           140    Adelie Anvers     Dream         N79A2                No
+141           141    Adelie Anvers     Dream         N80A1               Yes
+142           142    Adelie Anvers     Dream         N80A2               Yes
+143           143    Adelie Anvers     Dream         N81A1               Yes
+144           144    Adelie Anvers     Dream         N81A2               Yes
+145           145    Adelie Anvers     Dream         N82A1               Yes
+146           146    Adelie Anvers     Dream         N82A2               Yes
+147           147    Adelie Anvers     Dream         N83A1               Yes
+148           148    Adelie Anvers     Dream         N83A2               Yes
+149           149    Adelie Anvers     Dream         N84A1               Yes
+150           150    Adelie Anvers     Dream         N84A2               Yes
+151           151    Adelie Anvers     Dream         N85A1               Yes
+152           152    Adelie Anvers     Dream         N85A2               Yes
+153             1    Gentoo Anvers    Biscoe         N31A1               Yes
+154             2    Gentoo Anvers    Biscoe         N31A2               Yes
+155             3    Gentoo Anvers    Biscoe         N32A1               Yes
+156             4    Gentoo Anvers    Biscoe         N32A2               Yes
+157             5    Gentoo Anvers    Biscoe         N33A1               Yes
+158             6    Gentoo Anvers    Biscoe         N33A2               Yes
+159             7    Gentoo Anvers    Biscoe         N34A1               Yes
+160             8    Gentoo Anvers    Biscoe         N34A2               Yes
+161             9    Gentoo Anvers    Biscoe         N35A1               Yes
+162            10    Gentoo Anvers    Biscoe         N35A2               Yes
+163            11    Gentoo Anvers    Biscoe         N36A1                No
+164            12    Gentoo Anvers    Biscoe         N36A2                No
+165            13    Gentoo Anvers    Biscoe         N37A1               Yes
+166            14    Gentoo Anvers    Biscoe         N37A2               Yes
+167            15    Gentoo Anvers    Biscoe         N38A1               Yes
+168            16    Gentoo Anvers    Biscoe         N38A2               Yes
+169            17    Gentoo Anvers    Biscoe         N39A1               Yes
+170            18    Gentoo Anvers    Biscoe         N39A2               Yes
+172            20    Gentoo Anvers    Biscoe         N40A2               Yes
+173            21    Gentoo Anvers    Biscoe         N41A1               Yes
+174            22    Gentoo Anvers    Biscoe         N41A2               Yes
+175            23    Gentoo Anvers    Biscoe         N42A1               Yes
+176            24    Gentoo Anvers    Biscoe         N42A2               Yes
+177            25    Gentoo Anvers    Biscoe         N44A1               Yes
+178            26    Gentoo Anvers    Biscoe         N44A2               Yes
+179            27    Gentoo Anvers    Biscoe         N46A1               Yes
+180            28    Gentoo Anvers    Biscoe         N46A2               Yes
+181            29    Gentoo Anvers    Biscoe         N47A1               Yes
+182            30    Gentoo Anvers    Biscoe         N47A2               Yes
+183            31    Gentoo Anvers    Biscoe         N50A1               Yes
+184            32    Gentoo Anvers    Biscoe         N50A2               Yes
+185            33    Gentoo Anvers    Biscoe         N56A1               Yes
+186            34    Gentoo Anvers    Biscoe         N56A2               Yes
+187            35    Gentoo Anvers    Biscoe          N2A1               Yes
+188            36    Gentoo Anvers    Biscoe          N2A2               Yes
+189            37    Gentoo Anvers    Biscoe          N4A1               Yes
+190            38    Gentoo Anvers    Biscoe          N4A2               Yes
+191            39    Gentoo Anvers    Biscoe          N5A1               Yes
+192            40    Gentoo Anvers    Biscoe          N5A2               Yes
+193            41    Gentoo Anvers    Biscoe          N6A1                No
+194            42    Gentoo Anvers    Biscoe          N6A2                No
+195            43    Gentoo Anvers    Biscoe          N7A1               Yes
+196            44    Gentoo Anvers    Biscoe          N7A2               Yes
+197            45    Gentoo Anvers    Biscoe          N8A1               Yes
+198            46    Gentoo Anvers    Biscoe          N8A2               Yes
+199            47    Gentoo Anvers    Biscoe         N11A1                No
+200            48    Gentoo Anvers    Biscoe         N11A2                No
+201            49    Gentoo Anvers    Biscoe         N12A1               Yes
+202            50    Gentoo Anvers    Biscoe         N12A2               Yes
+203            51    Gentoo Anvers    Biscoe         N13A1               Yes
+204            52    Gentoo Anvers    Biscoe         N13A2               Yes
+205            53    Gentoo Anvers    Biscoe         N14A1               Yes
+206            54    Gentoo Anvers    Biscoe         N14A2               Yes
+207            55    Gentoo Anvers    Biscoe         N15A1               Yes
+208            56    Gentoo Anvers    Biscoe         N15A2               Yes
+209            57    Gentoo Anvers    Biscoe         N16A1               Yes
+210            58    Gentoo Anvers    Biscoe         N16A2               Yes
+211            59    Gentoo Anvers    Biscoe         N17A1               Yes
+212            60    Gentoo Anvers    Biscoe         N17A2               Yes
+213            61    Gentoo Anvers    Biscoe         N18A1               Yes
+214            62    Gentoo Anvers    Biscoe         N18A2               Yes
+215            63    Gentoo Anvers    Biscoe         N19A1               Yes
+216            64    Gentoo Anvers    Biscoe         N19A2               Yes
+217            65    Gentoo Anvers    Biscoe         N20A1               Yes
+218            66    Gentoo Anvers    Biscoe         N20A2               Yes
+219            67    Gentoo Anvers    Biscoe         N51A1               Yes
+220            68    Gentoo Anvers    Biscoe         N51A2               Yes
+222            70    Gentoo Anvers    Biscoe         N53A2               Yes
+223            71    Gentoo Anvers    Biscoe         N54A1               Yes
+224            72    Gentoo Anvers    Biscoe         N54A2               Yes
+225            73    Gentoo Anvers    Biscoe         N55A1               Yes
+226            74    Gentoo Anvers    Biscoe         N55A2               Yes
+227            75    Gentoo Anvers    Biscoe         N56A1               Yes
+228            76    Gentoo Anvers    Biscoe         N56A2               Yes
+229            77    Gentoo Anvers    Biscoe         N58A1               Yes
+230            78    Gentoo Anvers    Biscoe         N58A2               Yes
+231            79    Gentoo Anvers    Biscoe         N60A1               Yes
+232            80    Gentoo Anvers    Biscoe         N60A2               Yes
+233            81    Gentoo Anvers    Biscoe          N1A1               Yes
+234            82    Gentoo Anvers    Biscoe          N1A2               Yes
+235            83    Gentoo Anvers    Biscoe          N6A1               Yes
+236            84    Gentoo Anvers    Biscoe          N6A2               Yes
+237            85    Gentoo Anvers    Biscoe          N8A1               Yes
+238            86    Gentoo Anvers    Biscoe          N8A2               Yes
+239            87    Gentoo Anvers    Biscoe         N13A1               Yes
+240            88    Gentoo Anvers    Biscoe         N13A2               Yes
+241            89    Gentoo Anvers    Biscoe         N14A1               Yes
+242            90    Gentoo Anvers    Biscoe         N14A2               Yes
+243            91    Gentoo Anvers    Biscoe         N15A1               Yes
+244            92    Gentoo Anvers    Biscoe         N15A2               Yes
+245            93    Gentoo Anvers    Biscoe         N18A1               Yes
+246            94    Gentoo Anvers    Biscoe         N18A2               Yes
+247            95    Gentoo Anvers    Biscoe         N19A1               Yes
+248            96    Gentoo Anvers    Biscoe         N19A2               Yes
+249            97    Gentoo Anvers    Biscoe         N20A1               Yes
+250            98    Gentoo Anvers    Biscoe         N20A2               Yes
+251            99    Gentoo Anvers    Biscoe         N21A1               Yes
+252           100    Gentoo Anvers    Biscoe         N21A2               Yes
+253           101    Gentoo Anvers    Biscoe         N22A1               Yes
+254           102    Gentoo Anvers    Biscoe         N22A2               Yes
+255           103    Gentoo Anvers    Biscoe         N23A1               Yes
+256           104    Gentoo Anvers    Biscoe         N23A2               Yes
+257           105    Gentoo Anvers    Biscoe         N24A1               Yes
+258           106    Gentoo Anvers    Biscoe         N24A2               Yes
+259           107    Gentoo Anvers    Biscoe         N28A1               Yes
+260           108    Gentoo Anvers    Biscoe         N28A2               Yes
+261           109    Gentoo Anvers    Biscoe         N29A1               Yes
+262           110    Gentoo Anvers    Biscoe         N29A2               Yes
+264           112    Gentoo Anvers    Biscoe         N32A2               Yes
+265           113    Gentoo Anvers    Biscoe         N34A1               Yes
+266           114    Gentoo Anvers    Biscoe         N34A2               Yes
+267           115    Gentoo Anvers    Biscoe         N35A1               Yes
+268           116    Gentoo Anvers    Biscoe         N35A2               Yes
+269           117    Gentoo Anvers    Biscoe         N36A1               Yes
+270           118    Gentoo Anvers    Biscoe         N36A2               Yes
+271           119    Gentoo Anvers    Biscoe         N38A1                No
+273           121    Gentoo Anvers    Biscoe         N39A1               Yes
+274           122    Gentoo Anvers    Biscoe         N39A2               Yes
+275           123    Gentoo Anvers    Biscoe         N43A1               Yes
+276           124    Gentoo Anvers    Biscoe         N43A2               Yes
+277             1 Chinstrap Anvers     Dream         N61A1                No
+278             2 Chinstrap Anvers     Dream         N61A2                No
+279             3 Chinstrap Anvers     Dream         N62A1               Yes
+280             4 Chinstrap Anvers     Dream         N62A2               Yes
+281             5 Chinstrap Anvers     Dream         N64A1               Yes
+282             6 Chinstrap Anvers     Dream         N64A2               Yes
+283             7 Chinstrap Anvers     Dream         N66A1               Yes
+284             8 Chinstrap Anvers     Dream         N66A2               Yes
+285             9 Chinstrap Anvers     Dream         N67A1               Yes
+286            10 Chinstrap Anvers     Dream         N67A2               Yes
+287            11 Chinstrap Anvers     Dream         N68A1               Yes
+288            12 Chinstrap Anvers     Dream         N68A2               Yes
+289            13 Chinstrap Anvers     Dream         N69A1               Yes
+290            14 Chinstrap Anvers     Dream         N69A2               Yes
+291            15 Chinstrap Anvers     Dream         N70A1               Yes
+292            16 Chinstrap Anvers     Dream         N70A2               Yes
+293            17 Chinstrap Anvers     Dream         N71A1                No
+294            18 Chinstrap Anvers     Dream         N71A2                No
+295            19 Chinstrap Anvers     Dream         N72A1               Yes
+296            20 Chinstrap Anvers     Dream         N72A2               Yes
+297            21 Chinstrap Anvers     Dream         N73A1               Yes
+298            22 Chinstrap Anvers     Dream         N73A2               Yes
+299            23 Chinstrap Anvers     Dream         N85A1                No
+300            24 Chinstrap Anvers     Dream         N85A2                No
+301            25 Chinstrap Anvers     Dream         N89A1                No
+302            26 Chinstrap Anvers     Dream         N89A2                No
+303            27 Chinstrap Anvers     Dream         N61A1                No
+304            28 Chinstrap Anvers     Dream         N61A2                No
+305            29 Chinstrap Anvers     Dream         N62A1               Yes
+306            30 Chinstrap Anvers     Dream         N62A2               Yes
+307            31 Chinstrap Anvers     Dream         N63A1               Yes
+308            32 Chinstrap Anvers     Dream         N63A2               Yes
+309            33 Chinstrap Anvers     Dream         N65A1               Yes
+310            34 Chinstrap Anvers     Dream         N65A2               Yes
+311            35 Chinstrap Anvers     Dream         N67A1               Yes
+312            36 Chinstrap Anvers     Dream         N67A2               Yes
+313            37 Chinstrap Anvers     Dream         N69A1               Yes
+314            38 Chinstrap Anvers     Dream         N69A2               Yes
+315            39 Chinstrap Anvers     Dream         N72A1                No
+316            40 Chinstrap Anvers     Dream         N72A2                No
+317            41 Chinstrap Anvers     Dream         N74A1               Yes
+318            42 Chinstrap Anvers     Dream         N74A2               Yes
+319            43 Chinstrap Anvers     Dream         N75A1               Yes
+320            44 Chinstrap Anvers     Dream         N75A2               Yes
+321            45 Chinstrap Anvers     Dream         N86A1               Yes
+322            46 Chinstrap Anvers     Dream         N86A2               Yes
+323            47 Chinstrap Anvers     Dream         N87A1               Yes
+324            48 Chinstrap Anvers     Dream         N87A2               Yes
+325            49 Chinstrap Anvers     Dream         N88A1               Yes
+326            50 Chinstrap Anvers     Dream         N88A2               Yes
+327            51 Chinstrap Anvers     Dream         N90A1               Yes
+328            52 Chinstrap Anvers     Dream         N90A2               Yes
+329            53 Chinstrap Anvers     Dream         N92A1               Yes
+330            54 Chinstrap Anvers     Dream         N92A2               Yes
+331            55 Chinstrap Anvers     Dream         N93A1               Yes
+332            56 Chinstrap Anvers     Dream         N93A2               Yes
+333            57 Chinstrap Anvers     Dream         N94A1               Yes
+334            58 Chinstrap Anvers     Dream         N94A2               Yes
+335            59 Chinstrap Anvers     Dream         N95A1               Yes
+336            60 Chinstrap Anvers     Dream         N95A2               Yes
+337            61 Chinstrap Anvers     Dream         N96A1               Yes
+338            62 Chinstrap Anvers     Dream         N96A2               Yes
+339            63 Chinstrap Anvers     Dream         N98A1               Yes
+340            64 Chinstrap Anvers     Dream         N98A2               Yes
+341            65 Chinstrap Anvers     Dream         N99A1                No
+342            66 Chinstrap Anvers     Dream         N99A2                No
+343            67 Chinstrap Anvers     Dream        N100A1               Yes
+344            68 Chinstrap Anvers     Dream        N100A2               Yes
+      Date Egg Culmen Length (mm) Culmen Depth (mm) Flipper Length (mm)
+1   2007-11-11               39.1              18.7                 181
+2   2007-11-11               39.5              17.4                 186
+3   2007-11-16               40.3              18.0                 195
+5   2007-11-16               36.7              19.3                 193
+6   2007-11-16               39.3              20.6                 190
+7   2007-11-15               38.9              17.8                 181
+8   2007-11-15               39.2              19.6                 195
+9   2007-11-09               34.1              18.1                 193
+10  2007-11-09               42.0              20.2                 190
+11  2007-11-09               37.8              17.1                 186
+12  2007-11-09               37.8              17.3                 180
+13  2007-11-15               41.1              17.6                 182
+14  2007-11-15               38.6              21.2                 191
+15  2007-11-16               34.6              21.1                 198
+16  2007-11-16               36.6              17.8                 185
+17  2007-11-12               38.7              19.0                 195
+18  2007-11-12               42.5              20.7                 197
+19  2007-11-16               34.4              18.4                 184
+20  2007-11-16               46.0              21.5                 194
+21  2007-11-12               37.8              18.3                 174
+22  2007-11-12               37.7              18.7                 180
+23  2007-11-12               35.9              19.2                 189
+24  2007-11-12               38.2              18.1                 185
+25  2007-11-10               38.8              17.2                 180
+26  2007-11-10               35.3              18.9                 187
+27  2007-11-12               40.6              18.6                 183
+28  2007-11-12               40.5              17.9                 187
+29  2007-11-10               37.9              18.6                 172
+30  2007-11-10               40.5              18.9                 180
+31  2007-11-09               39.5              16.7                 178
+32  2007-11-09               37.2              18.1                 178
+33  2007-11-09               39.5              17.8                 188
+34  2007-11-09               40.9              18.9                 184
+35  2007-11-16               36.4              17.0                 195
+36  2007-11-16               39.2              21.1                 196
+37  2007-11-16               38.8              20.0                 190
+38  2007-11-16               42.2              18.5                 180
+39  2007-11-13               37.6              19.3                 181
+40  2007-11-13               39.8              19.1                 184
+41  2007-11-16               36.5              18.0                 182
+42  2007-11-16               40.8              18.4                 195
+43  2007-11-19               36.0              18.5                 186
+44  2007-11-19               44.1              19.7                 196
+45  2007-11-16               37.0              16.9                 185
+46  2007-11-16               39.6              18.8                 190
+47  2007-11-13               41.1              19.0                 182
+48  2007-11-13               37.5              18.9                 179
+49  2007-11-13               36.0              17.9                 190
+50  2007-11-13               42.3              21.2                 191
+51  2008-11-06               39.6              17.7                 186
+52  2008-11-06               40.1              18.9                 188
+53  2008-11-09               35.0              17.9                 190
+54  2008-11-09               42.0              19.5                 200
+55  2008-11-09               34.5              18.1                 187
+56  2008-11-09               41.4              18.6                 191
+57  2008-11-15               39.0              17.5                 186
+58  2008-11-15               40.6              18.8                 193
+59  2008-11-15               36.5              16.6                 181
+60  2008-11-15               37.6              19.1                 194
+61  2008-11-13               35.7              16.9                 185
+62  2008-11-13               41.3              21.1                 195
+63  2008-11-13               37.6              17.0                 185
+64  2008-11-13               41.1              18.2                 192
+65  2008-11-13               36.4              17.1                 184
+66  2008-11-13               41.6              18.0                 192
+67  2008-11-06               35.5              16.2                 195
+68  2008-11-06               41.1              19.1                 188
+69  2008-11-11               35.9              16.6                 190
+70  2008-11-11               41.8              19.4                 198
+71  2008-11-14               33.5              19.0                 190
+72  2008-11-14               39.7              18.4                 190
+73  2008-11-11               39.6              17.2                 196
+74  2008-11-11               45.8              18.9                 197
+75  2008-11-08               35.5              17.5                 190
+76  2008-11-08               42.8              18.5                 195
+77  2008-11-06               40.9              16.8                 191
+78  2008-11-06               37.2              19.4                 184
+79  2008-11-09               36.2              16.1                 187
+80  2008-11-09               42.1              19.1                 195
+81  2008-11-02               34.6              17.2                 189
+82  2008-11-02               42.9              17.6                 196
+83  2008-11-07               36.7              18.8                 187
+84  2008-11-07               35.1              19.4                 193
+85  2008-11-17               37.3              17.8                 191
+86  2008-11-17               41.3              20.3                 194
+87  2008-11-08               36.3              19.5                 190
+88  2008-11-08               36.9              18.6                 189
+89  2008-11-08               38.3              19.2                 189
+90  2008-11-08               38.9              18.8                 190
+91  2008-11-14               35.7              18.0                 202
+92  2008-11-14               41.1              18.1                 205
+93  2008-11-05               34.0              17.1                 185
+94  2008-11-05               39.6              18.1                 186
+95  2008-11-17               36.2              17.3                 187
+96  2008-11-17               40.8              18.9                 208
+97  2008-11-08               38.1              18.6                 190
+98  2008-11-08               40.3              18.5                 196
+99  2008-11-10               33.1              16.1                 178
+100 2008-11-10               43.2              18.5                 192
+101 2009-11-09               35.0              17.9                 192
+102 2009-11-09               41.0              20.0                 203
+103 2009-11-15               37.7              16.0                 183
+104 2009-11-15               37.8              20.0                 190
+105 2009-11-15               37.9              18.6                 193
+106 2009-11-15               39.7              18.9                 184
+107 2009-11-15               38.6              17.2                 199
+108 2009-11-15               38.2              20.0                 190
+109 2009-11-20               38.1              17.0                 181
+110 2009-11-20               43.2              19.0                 197
+111 2009-11-12               38.1              16.5                 198
+112 2009-11-12               45.6              20.3                 191
+113 2009-11-15               39.7              17.7                 193
+114 2009-11-15               42.2              19.5                 197
+115 2009-11-17               39.6              20.7                 191
+116 2009-11-17               42.7              18.3                 196
+117 2009-11-18               38.6              17.0                 188
+118 2009-11-18               37.3              20.5                 199
+119 2009-11-22               35.7              17.0                 189
+120 2009-11-22               41.1              18.6                 189
+121 2009-11-17               36.2              17.2                 187
+122 2009-11-17               37.7              19.8                 198
+123 2009-11-16               40.2              17.0                 176
+124 2009-11-16               41.4              18.5                 202
+125 2009-11-18               35.2              15.9                 186
+126 2009-11-18               40.6              19.0                 199
+127 2009-11-21               38.8              17.6                 191
+128 2009-11-21               41.5              18.3                 195
+129 2009-11-18               39.0              17.1                 191
+130 2009-11-18               44.1              18.0                 210
+131 2009-11-23               38.5              17.9                 190
+132 2009-11-23               43.1              19.2                 197
+133 2009-11-10               36.8              18.5                 193
+134 2009-11-10               37.5              18.5                 199
+135 2009-11-13               38.1              17.6                 187
+136 2009-11-13               41.1              17.5                 190
+137 2009-11-16               35.6              17.5                 191
+138 2009-11-16               40.2              20.1                 200
+139 2009-11-16               37.0              16.5                 185
+140 2009-11-16               39.7              17.9                 193
+141 2009-11-14               40.2              17.1                 193
+142 2009-11-14               40.6              17.2                 187
+143 2009-11-16               32.1              15.5                 188
+144 2009-11-16               40.7              17.0                 190
+145 2009-11-16               37.3              16.8                 192
+146 2009-11-16               39.0              18.7                 185
+147 2009-11-13               39.2              18.6                 190
+148 2009-11-13               36.6              18.4                 184
+149 2009-11-17               36.0              17.8                 195
+150 2009-11-17               37.8              18.1                 193
+151 2009-11-17               36.0              17.1                 187
+152 2009-11-17               41.5              18.5                 201
+153 2007-11-27               46.1              13.2                 211
+154 2007-11-27               50.0              16.3                 230
+155 2007-11-27               48.7              14.1                 210
+156 2007-11-27               50.0              15.2                 218
+157 2007-11-18               47.6              14.5                 215
+158 2007-11-18               46.5              13.5                 210
+159 2007-11-27               45.4              14.6                 211
+160 2007-11-27               46.7              15.3                 219
+161 2007-11-27               43.3              13.4                 209
+162 2007-11-27               46.8              15.4                 215
+163 2007-11-27               40.9              13.7                 214
+164 2007-11-27               49.0              16.1                 216
+165 2007-11-29               45.5              13.7                 214
+166 2007-11-29               48.4              14.6                 213
+167 2007-12-03               45.8              14.6                 210
+168 2007-12-03               49.3              15.7                 217
+169 2007-11-27               42.0              13.5                 210
+170 2007-11-27               49.2              15.2                 221
+172 2007-11-27               48.7              15.1                 222
+173 2007-11-27               50.2              14.3                 218
+174 2007-11-27               45.1              14.5                 215
+175 2007-11-27               46.5              14.5                 213
+176 2007-11-27               46.3              15.8                 215
+177 2007-11-29               42.9              13.1                 215
+178 2007-11-29               46.1              15.1                 215
+179 2007-11-29               44.5              14.3                 216
+180 2007-11-29               47.8              15.0                 215
+181 2007-11-29               48.2              14.3                 210
+182 2007-11-29               50.0              15.3                 220
+183 2007-11-29               47.3              15.3                 222
+184 2007-11-29               42.8              14.2                 209
+185 2007-12-03               45.1              14.5                 207
+186 2007-12-03               59.6              17.0                 230
+187 2008-11-13               49.1              14.8                 220
+188 2008-11-13               48.4              16.3                 220
+189 2008-11-02               42.6              13.7                 213
+190 2008-11-02               44.4              17.3                 219
+191 2008-11-09               44.0              13.6                 208
+192 2008-11-09               48.7              15.7                 208
+193 2008-11-04               42.7              13.7                 208
+194 2008-11-04               49.6              16.0                 225
+195 2008-11-04               45.3              13.7                 210
+196 2008-11-04               49.6              15.0                 216
+197 2008-11-03               50.5              15.9                 222
+198 2008-11-03               43.6              13.9                 217
+199 2008-11-09               45.5              13.9                 210
+200 2008-11-09               50.5              15.9                 225
+201 2008-11-02               44.9              13.3                 213
+202 2008-11-02               45.2              15.8                 215
+203 2008-11-04               46.6              14.2                 210
+204 2008-11-04               48.5              14.1                 220
+205 2008-11-04               45.1              14.4                 210
+206 2008-11-04               50.1              15.0                 225
+207 2008-11-04               46.5              14.4                 217
+208 2008-11-04               45.0              15.4                 220
+209 2008-11-03               43.8              13.9                 208
+210 2008-11-03               45.5              15.0                 220
+211 2008-11-06               43.2              14.5                 208
+212 2008-11-06               50.4              15.3                 224
+213 2008-11-03               45.3              13.8                 208
+214 2008-11-03               46.2              14.9                 221
+215 2008-11-13               45.7              13.9                 214
+216 2008-11-13               54.3              15.7                 231
+217 2008-11-04               45.8              14.2                 219
+218 2008-11-04               49.8              16.8                 230
+219 2008-11-09               46.2              14.4                 214
+220 2008-11-09               49.5              16.2                 229
+222 2008-11-13               50.7              15.0                 223
+223 2008-11-03               47.7              15.0                 216
+224 2008-11-03               46.4              15.6                 221
+225 2008-11-09               48.2              15.6                 221
+226 2008-11-09               46.5              14.8                 217
+227 2008-11-06               46.4              15.0                 216
+228 2008-11-06               48.6              16.0                 230
+229 2008-11-06               47.5              14.2                 209
+230 2008-11-06               51.1              16.3                 220
+231 2008-11-09               45.2              13.8                 215
+232 2008-11-09               45.2              16.4                 223
+233 2009-11-18               49.1              14.5                 212
+234 2009-11-18               52.5              15.6                 221
+235 2009-11-15               47.4              14.6                 212
+236 2009-11-15               50.0              15.9                 224
+237 2009-11-22               44.9              13.8                 212
+238 2009-11-22               50.8              17.3                 228
+239 2009-11-20               43.4              14.4                 218
+240 2009-11-20               51.3              14.2                 218
+241 2009-11-25               47.5              14.0                 212
+242 2009-11-25               52.1              17.0                 230
+243 2009-11-25               47.5              15.0                 218
+244 2009-11-25               52.2              17.1                 228
+245 2009-12-01               45.5              14.5                 212
+246 2009-12-01               49.5              16.1                 224
+247 2009-11-27               44.5              14.7                 214
+248 2009-11-27               50.8              15.7                 226
+249 2009-11-18               49.4              15.8                 216
+250 2009-11-18               46.9              14.6                 222
+251 2009-11-18               48.4              14.4                 203
+252 2009-11-18               51.1              16.5                 225
+253 2009-11-22               48.5              15.0                 219
+254 2009-11-22               55.9              17.0                 228
+255 2009-11-18               47.2              15.5                 215
+256 2009-11-18               49.1              15.0                 228
+257 2009-12-01               47.3              13.8                 216
+258 2009-12-01               46.8              16.1                 215
+259 2009-11-10               41.7              14.7                 210
+260 2009-11-10               53.4              15.8                 219
+261 2009-11-09               43.3              14.0                 208
+262 2009-11-09               48.1              15.1                 209
+264 2009-11-20               49.8              15.9                 229
+265 2009-11-27               43.5              15.2                 213
+266 2009-11-27               51.5              16.3                 230
+267 2009-11-25               46.2              14.1                 217
+268 2009-11-25               55.1              16.0                 230
+269 2009-12-01               44.5              15.7                 217
+270 2009-12-01               48.8              16.2                 222
+271 2009-12-01               47.2              13.7                 214
+273 2009-11-22               46.8              14.3                 215
+274 2009-11-22               50.4              15.7                 222
+275 2009-11-22               45.2              14.8                 212
+276 2009-11-22               49.9              16.1                 213
+277 2007-11-19               46.5              17.9                 192
+278 2007-11-19               50.0              19.5                 196
+279 2007-11-26               51.3              19.2                 193
+280 2007-11-26               45.4              18.7                 188
+281 2007-11-21               52.7              19.8                 197
+282 2007-11-21               45.2              17.8                 198
+283 2007-11-28               46.1              18.2                 178
+284 2007-11-28               51.3              18.2                 197
+285 2007-11-21               46.0              18.9                 195
+286 2007-11-21               51.3              19.9                 198
+287 2007-11-28               46.6              17.8                 193
+288 2007-11-28               51.7              20.3                 194
+289 2007-11-26               47.0              17.3                 185
+290 2007-11-26               52.0              18.1                 201
+291 2007-11-22               45.9              17.1                 190
+292 2007-11-22               50.5              19.6                 201
+293 2007-11-30               50.3              20.0                 197
+294 2007-11-30               58.0              17.8                 181
+295 2007-11-30               46.4              18.6                 190
+296 2007-11-30               49.2              18.2                 195
+297 2007-12-03               42.4              17.3                 181
+298 2007-12-03               48.5              17.5                 191
+299 2007-11-28               43.2              16.6                 187
+300 2007-11-28               50.6              19.4                 193
+301 2007-11-28               46.7              17.9                 195
+302 2007-11-28               52.0              19.0                 197
+303 2008-11-25               50.5              18.4                 200
+304 2008-11-25               49.5              19.0                 200
+305 2008-11-14               46.4              17.8                 191
+306 2008-11-14               52.8              20.0                 205
+307 2008-11-24               40.9              16.6                 187
+308 2008-11-24               54.2              20.8                 201
+309 2008-11-24               42.5              16.7                 187
+310 2008-11-24               51.0              18.8                 203
+311 2008-11-25               49.7              18.6                 195
+312 2008-11-25               47.5              16.8                 199
+313 2008-11-14               47.6              18.3                 195
+314 2008-11-14               52.0              20.7                 210
+315 2008-11-24               46.9              16.6                 192
+316 2008-11-24               53.5              19.9                 205
+317 2008-11-24               49.0              19.5                 210
+318 2008-11-24               46.2              17.5                 187
+319 2008-11-14               50.9              19.1                 196
+320 2008-11-14               45.5              17.0                 196
+321 2009-11-17               50.9              17.9                 196
+322 2009-11-17               50.8              18.5                 201
+323 2009-11-27               50.1              17.9                 190
+324 2009-11-27               49.0              19.6                 212
+325 2009-11-23               51.5              18.7                 187
+326 2009-11-23               49.8              17.3                 198
+327 2009-11-21               48.1              16.4                 199
+328 2009-11-21               51.4              19.0                 201
+329 2009-11-23               45.7              17.3                 193
+330 2009-11-23               50.7              19.7                 203
+331 2009-11-27               42.5              17.3                 187
+332 2009-11-27               52.2              18.8                 197
+333 2009-11-21               45.2              16.6                 191
+334 2009-11-21               49.3              19.9                 203
+335 2009-11-21               50.2              18.8                 202
+336 2009-11-21               45.6              19.4                 194
+337 2009-11-27               51.9              19.5                 206
+338 2009-11-27               46.8              16.5                 189
+339 2009-11-19               45.7              17.0                 195
+340 2009-11-19               55.8              19.8                 207
+341 2009-11-21               43.5              18.1                 202
+342 2009-11-21               49.6              18.2                 193
+343 2009-11-21               50.8              19.0                 210
+344 2009-11-21               50.2              18.7                 198
+    Body Mass (g)    Sex Delta 15 N (o/oo) Delta 13 C (o/oo)
+1            3750   MALE                NA                NA
+2            3800 FEMALE           8.94956         -24.69454
+3            3250 FEMALE           8.36821         -25.33302
+5            3450 FEMALE           8.76651         -25.32426
+6            3650   MALE           8.66496         -25.29805
+7            3625 FEMALE           9.18718         -25.21799
+8            4675   MALE           9.46060         -24.89958
+9            3475   &lt;NA&gt;                NA                NA
+10           4250   &lt;NA&gt;           9.13362         -25.09368
+11           3300   &lt;NA&gt;           8.63243         -25.21315
+12           3700   &lt;NA&gt;                NA                NA
+13           3200 FEMALE                NA                NA
+14           3800   MALE                NA                NA
+15           4400   MALE           8.55583         -25.22588
+16           3700 FEMALE                NA                NA
+17           3450 FEMALE           9.18528         -25.06691
+18           4500   MALE           8.67538         -25.13993
+19           3325 FEMALE           8.47827         -25.23319
+20           4200   MALE           9.11616         -24.77227
+21           3400 FEMALE           8.73762         -25.09383
+22           3600   MALE           8.66271         -25.06390
+23           3800 FEMALE           9.22286         -25.03474
+24           3950   MALE           8.43423         -25.22664
+25           3800   MALE           9.63954         -25.29856
+26           3800 FEMALE           9.21292         -24.36130
+27           3550   MALE           8.93997         -25.36288
+28           3200 FEMALE           8.08138         -25.49448
+29           3150 FEMALE           8.38404         -25.19837
+30           3950   MALE           8.90027         -25.11609
+31           3250 FEMALE           9.69756         -25.11223
+32           3900   MALE           9.72764         -25.01020
+33           3300 FEMALE           9.66523         -25.06020
+34           3900   MALE           8.79665         -25.14591
+35           3325 FEMALE           9.17847         -25.23061
+36           4150   MALE           9.15308         -25.03469
+37           3950   MALE           9.18985         -25.12255
+38           3550 FEMALE           8.04787         -25.49523
+39           3300 FEMALE           9.41131         -25.04169
+40           4650   MALE                NA                NA
+41           3150 FEMALE           9.68933         -24.42280
+42           3900   MALE                NA                NA
+43           3100 FEMALE           9.50772         -25.03492
+44           4400   MALE           9.23720         -24.52698
+45           3000 FEMALE           9.36392         -25.01745
+46           4600   MALE           9.49106         -24.10255
+47           3425   MALE                NA                NA
+48           2975   &lt;NA&gt;                NA                NA
+49           3450 FEMALE           9.51784         -25.07683
+50           4150   MALE           8.87988         -25.18543
+51           3500 FEMALE           8.46616         -26.12989
+52           4300   MALE           8.51362         -26.55602
+53           3450 FEMALE           8.19539         -26.17213
+54           4050   MALE           8.48095         -26.31460
+55           2900 FEMALE           8.41837         -26.54718
+56           3700   MALE           8.35396         -26.27853
+57           3550 FEMALE           8.57199         -26.07188
+58           3800   MALE           8.56674         -25.98843
+59           2850 FEMALE           9.07878         -25.88156
+60           3750   MALE           9.10800         -25.89677
+61           3150 FEMALE           8.96472         -26.40943
+62           4400   MALE           8.74802         -26.37809
+63           3600 FEMALE           8.58063         -26.21569
+64           4050   MALE           8.62264         -26.60023
+65           2850 FEMALE           8.62623         -26.11650
+66           3950   MALE           8.85562         -26.09294
+67           3350 FEMALE           8.56192         -25.95541
+68           4100   MALE           8.71078         -25.81012
+69           3050 FEMALE           8.47781         -26.07821
+70           4450   MALE           8.86853         -26.06209
+71           3600 FEMALE           7.88863         -26.63085
+72           3900   MALE           9.29808         -25.23453
+73           3550 FEMALE           8.33524         -26.55351
+74           4150   MALE           8.18658         -26.45978
+75           3700 FEMALE           8.70642         -26.15003
+76           4250   MALE           8.29930         -26.38986
+77           3700 FEMALE           8.47257         -26.02002
+78           3900   MALE           8.35540         -26.44787
+79           3550 FEMALE           7.82381         -26.51382
+80           4000   MALE           9.05736         -25.81513
+81           3200 FEMALE           7.69778         -26.53870
+82           4700   MALE           8.63259         -26.23027
+83           3800 FEMALE           7.88494         -26.24837
+84           4200   MALE           8.90002         -26.46254
+85           3350 FEMALE           8.32718         -26.38396
+86           3550   MALE           9.14863         -26.09635
+87           3800   MALE           8.57087         -26.22227
+88           3500 FEMALE           8.59147         -26.08165
+89           3950   MALE           9.07826         -26.12417
+90           3600 FEMALE           8.36936         -26.11199
+91           3550 FEMALE           8.46531         -26.05621
+92           4300   MALE           8.77018         -25.83352
+93           3400 FEMALE           8.01485         -26.69543
+94           4450   MALE           8.49915         -26.42406
+95           3300 FEMALE           8.90723         -26.30037
+96           4300   MALE           8.48204         -26.57941
+97           3700 FEMALE           8.10277         -26.50086
+98           4350   MALE           8.39459         -26.01152
+99           2900 FEMALE           9.04218         -26.15775
+100          4100   MALE           8.97025         -26.03679
+101          3725 FEMALE           8.84451         -26.28055
+102          4725   MALE           9.01079         -26.38085
+103          3075 FEMALE           9.21510         -26.22530
+104          4250   MALE           9.51929         -25.69199
+105          2925 FEMALE           9.02642         -25.86482
+106          3550   MALE           8.85699         -25.80208
+107          3750 FEMALE           8.77322         -26.48973
+108          3900   MALE           9.59245         -25.70711
+109          3175 FEMALE           9.79532         -25.27385
+110          4775   MALE           9.31735         -25.45171
+111          3825 FEMALE           8.43951         -26.57563
+112          4600   MALE           8.65466         -26.32909
+113          3200 FEMALE           9.02657         -26.06203
+114          4275   MALE           8.80186         -26.41218
+115          3900 FEMALE           8.80967         -26.78958
+116          4075   MALE           8.91434         -26.42018
+117          2900 FEMALE           9.18021         -25.77264
+118          3775   MALE           9.49645         -26.36678
+119          3350 FEMALE           8.96436         -23.90309
+120          3325   MALE           9.32277         -26.09989
+121          3150 FEMALE           9.04296         -26.19444
+122          3500   MALE           9.11066         -26.42563
+123          3450 FEMALE           9.30722         -25.61039
+124          3875   MALE           9.59462         -25.42621
+125          3050 FEMALE           8.81668         -25.95399
+126          4000   MALE           9.22537         -25.60826
+127          3275 FEMALE           8.88098         -25.89741
+128          4300   MALE           8.52566         -26.02450
+129          3050 FEMALE           9.19031         -25.73722
+130          4000   MALE           9.10702         -26.01363
+131          3325 FEMALE           8.98460         -25.57956
+132          3500   MALE           8.86495         -26.13960
+133          3500 FEMALE           8.98705         -25.57647
+134          4475   MALE           8.56708         -26.49288
+135          3425 FEMALE           8.71700         -25.77951
+136          3900   MALE           8.94365         -26.06943
+137          3175 FEMALE           8.75984         -25.97696
+138          3975   MALE           8.95998         -26.32601
+139          3400 FEMALE           8.61651         -26.07021
+140          4250   MALE           9.25769         -25.88798
+141          3400 FEMALE           9.28810         -25.54976
+142          3475   MALE           9.23408         -26.01549
+143          3050 FEMALE           8.79787         -26.61075
+144          3725   MALE           9.05674         -25.79529
+145          3000 FEMALE           9.06829         -25.85203
+146          3650   MALE           9.22033         -26.03442
+147          4250   MALE           9.11006         -25.79549
+148          3475 FEMALE           8.68744         -25.83060
+149          3450 FEMALE           8.94332         -25.79189
+150          3750   MALE           8.97533         -26.03495
+151          3700 FEMALE           8.93465         -26.07081
+152          4000   MALE           8.89640         -26.06967
+153          4500 FEMALE           7.99300         -25.51390
+154          5700   MALE           8.14756         -25.39369
+155          4450 FEMALE           8.14705         -25.46172
+156          5700   MALE           8.25540         -25.40075
+157          5400   MALE           8.23450         -25.54456
+158          4550 FEMALE           7.99530         -25.32829
+159          4800 FEMALE           8.24515         -25.46782
+160          5200   MALE           8.22673         -25.42760
+161          4400 FEMALE           8.13643         -25.32176
+162          5150   MALE           8.16310         -25.38017
+163          4650 FEMALE           8.19579         -25.39330
+164          5550   MALE           8.10417         -25.50562
+165          4650 FEMALE           7.77672         -25.41680
+166          5850   MALE           7.82080         -25.48025
+167          4200 FEMALE           7.79958         -25.62618
+168          5850   MALE           8.07137         -25.52473
+169          4150 FEMALE           7.63884         -25.52627
+170          6300   MALE           8.27376         -25.00169
+172          5350   MALE           7.96491         -25.39587
+173          5700   MALE           7.89620         -25.37746
+174          5000 FEMALE           7.63220         -25.46569
+175          4400 FEMALE           7.90436         -25.39470
+176          5050   MALE           7.90971         -25.38157
+177          5000 FEMALE           7.68528         -25.39181
+178          5100   MALE           7.83733         -25.42826
+179          4100   &lt;NA&gt;           7.96621         -25.69327
+180          5650   MALE           7.92358         -25.48383
+181          4600 FEMALE           7.68870         -25.50811
+182          5550   MALE           8.30515         -25.19017
+183          5250   MALE                NA                NA
+184          4700 FEMALE           7.63452         -25.46327
+185          5050 FEMALE           7.97408         -25.53768
+186          6050   MALE           7.76843         -25.68210
+187          5150 FEMALE           7.89744         -26.63405
+188          5400   MALE           8.03659         -26.86127
+189          4950 FEMALE           7.96935         -26.70968
+190          5250   MALE           8.13746         -26.79093
+191          4350 FEMALE           8.01979         -26.68311
+192          5350   MALE           8.14776         -26.84506
+193          3950 FEMALE           8.14567         -26.59467
+194          5700   MALE           8.38324         -26.84272
+195          4300 FEMALE           8.37615         -26.72791
+196          4750   MALE           8.26548         -26.76990
+197          5550   MALE           8.46894         -26.60436
+198          4900 FEMALE           8.27141         -26.77650
+199          4200 FEMALE           8.47829         -26.61788
+200          5400   MALE           8.65803         -26.57585
+201          5100 FEMALE           8.45167         -26.89644
+202          5300   MALE           8.55868         -26.67799
+203          4850 FEMALE           8.38289         -26.86352
+204          5300   MALE           8.39867         -26.79358
+205          4400 FEMALE           8.51951         -27.01854
+206          5000   MALE           8.50153         -26.61414
+207          4900 FEMALE           8.48789         -26.83006
+208          5050   MALE           8.63488         -26.75621
+209          4300 FEMALE           8.58319         -26.84415
+210          5000   MALE           8.63604         -26.74890
+211          4450 FEMALE           8.48367         -26.86485
+212          5550   MALE           8.74647         -26.79846
+213          4200 FEMALE           8.65015         -26.79053
+214          5300   MALE           8.60092         -26.84374
+215          4400 FEMALE           8.62870         -26.60484
+216          5650   MALE           8.49662         -26.84166
+217          4700 FEMALE           8.60447         -26.61601
+218          5700   MALE           8.47067         -26.69166
+219          4650   &lt;NA&gt;           8.24253         -26.81540
+220          5800   MALE           8.49854         -26.74809
+222          5550   MALE           8.63551         -26.74249
+223          4750 FEMALE           8.53018         -26.72751
+224          5000   MALE           8.35078         -26.70783
+225          5100   MALE           8.24651         -26.66958
+226          5200 FEMALE           8.58487         -26.59290
+227          4700 FEMALE           8.47938         -26.95470
+228          5800   MALE           8.59640         -26.71199
+229          4600 FEMALE           8.39299         -26.78733
+230          6000   MALE           8.40327         -26.76821
+231          4750 FEMALE           8.24694         -26.65359
+232          5950   MALE           8.19749         -26.65931
+233          4625 FEMALE           8.35802         -26.27660
+234          5450   MALE           8.28601         -26.27573
+235          4725 FEMALE           8.19101         -26.24369
+236          5350   MALE           8.20042         -26.39677
+237          4750 FEMALE           8.11238         -26.20372
+238          5600   MALE           8.27428         -26.30019
+239          4600 FEMALE           8.23468         -26.18599
+240          5300   MALE           8.15426         -26.34330
+241          4875 FEMALE           8.12691         -26.23613
+242          5550   MALE           8.27595         -26.11657
+243          4950 FEMALE           8.29671         -26.08547
+244          5400   MALE           8.36701         -25.89834
+245          4750 FEMALE           8.15566         -26.22848
+246          5650   MALE           8.83352         -25.69195
+247          4850 FEMALE           8.20106         -26.16524
+248          5200   MALE           8.27102         -26.11244
+249          4925   MALE           8.03624         -26.06594
+250          4875 FEMALE           7.88810         -26.04726
+251          4625 FEMALE           8.16582         -26.13971
+252          5250   MALE           8.20660         -26.36863
+253          4850 FEMALE           8.10231         -26.18763
+254          5600   MALE           8.31180         -26.35425
+255          4975 FEMALE           8.30817         -26.21651
+256          5500   MALE           8.65914         -25.79203
+257          4725   &lt;NA&gt;           8.25818         -26.23886
+258          5500   MALE           8.32359         -26.05756
+259          4700 FEMALE           8.12311         -26.44815
+260          5500   MALE           8.41017         -26.33867
+261          4575 FEMALE           8.42070         -26.38092
+262          5500   MALE           8.45738         -26.22664
+264          5950   MALE           8.29226         -26.21019
+265          4650 FEMALE           8.21634         -26.11046
+266          5500   MALE           8.78557         -25.76147
+267          4375 FEMALE           8.30231         -25.96013
+268          5850   MALE           8.08354         -26.18161
+269          4875   &lt;NA&gt;           8.04111         -26.18444
+270          6000   MALE           8.33825         -25.88547
+271          4925 FEMALE           7.99184         -26.20538
+273          4850 FEMALE           8.41151         -26.13832
+274          5750   MALE           8.30166         -26.04117
+275          5200 FEMALE           8.24246         -26.11969
+276          5400   MALE           8.36390         -26.15531
+277          3500 FEMALE           9.03935         -24.30229
+278          3900   MALE           8.92069         -24.23592
+279          3650   MALE           9.29078         -24.75570
+280          3525 FEMALE           8.64701         -24.62717
+281          3725   MALE           9.00642         -24.61867
+282          3950 FEMALE           8.88942         -24.49433
+283          3250 FEMALE           8.85664         -24.55644
+284          3750   MALE           8.63701         -24.84059
+285          4150 FEMALE           8.47173         -24.29229
+286          3700   MALE           8.79581         -24.36088
+287          3800 FEMALE           8.95063         -24.59897
+288          3775   MALE           8.68747         -24.38751
+289          3700 FEMALE           8.72037         -24.80526
+290          4050   MALE           9.02330         -24.38933
+291          3575 FEMALE           9.12277         -24.90024
+292          4050   MALE           9.80590         -24.72940
+293          3300   MALE          10.02019         -24.54704
+294          3700 FEMALE           9.14382         -24.57994
+295          3450 FEMALE           9.32105         -24.64162
+296          4400   MALE           9.27158         -24.64335
+297          3600 FEMALE           9.35138         -24.68790
+298          3400   MALE           9.42666         -24.26375
+299          2900 FEMALE           9.35416         -25.01185
+300          3800   MALE           9.28153         -24.97134
+301          3300 FEMALE           9.74144         -24.59467
+302          4150   MALE           9.36799         -24.47142
+303          3400 FEMALE           8.93990         -23.89017
+304          3800   MALE           9.63074         -24.34684
+305          3700 FEMALE           9.37369         -24.52896
+306          4550   MALE           9.25177         -24.69638
+307          3200 FEMALE           9.08458         -24.54903
+308          4300   MALE           9.49283         -24.59996
+309          3350 FEMALE           9.36668         -24.45195
+310          4100   MALE           9.23196         -24.17282
+311          3600   MALE           9.75486         -24.31198
+312          3900 FEMALE           9.07825         -25.14550
+313          3850 FEMALE           8.83502         -24.65859
+314          4800   MALE           9.43146         -24.68440
+315          2700 FEMALE           9.80589         -24.73735
+316          4500   MALE          10.02544         -24.90816
+317          3950   MALE           9.53262         -24.66867
+318          3650 FEMALE           9.61734         -24.66188
+319          3550   MALE          10.02372         -24.86594
+320          3500 FEMALE           9.36493         -24.66259
+321          3675 FEMALE           9.43684         -24.16566
+322          4450   MALE           9.45827         -24.35575
+323          3400 FEMALE           9.46819         -24.45721
+324          4300   MALE           9.34089         -24.45189
+325          3250   MALE           9.68950         -24.43062
+326          3675 FEMALE           9.32169         -24.41562
+327          3325 FEMALE           9.46929         -24.48403
+328          3950   MALE           9.43782         -24.36202
+329          3600 FEMALE           9.41500         -24.80500
+330          4050   MALE           9.93727         -24.59066
+331          3350 FEMALE           9.56534         -24.60882
+332          3450   MALE           9.77528         -24.56481
+333          3250 FEMALE           9.62357         -24.78984
+334          4050   MALE           9.88809         -24.59513
+335          3800   MALE           9.74492         -24.40400
+336          3525 FEMALE           9.46985         -24.65786
+337          3950   MALE                NA         -23.78767
+338          3650 FEMALE           9.65061         -24.48153
+339          3650 FEMALE           9.26715         -24.31912
+340          4000   MALE           9.70465         -24.53494
+341          3400 FEMALE           9.37608         -24.40753
+342          3775   MALE           9.46180         -24.70615
+343          4100   MALE           9.98044         -24.68741
+344          3775 FEMALE           9.39305         -24.25255
+                                                                Comments
+1                                         Not enough blood for isotopes.
+2                                                                   &lt;NA&gt;
+3                                                                   &lt;NA&gt;
+5                                                                   &lt;NA&gt;
+6                                                                   &lt;NA&gt;
+7                                  Nest never observed with full clutch.
+8                                  Nest never observed with full clutch.
+9                                              No blood sample obtained.
+10                                  No blood sample obtained for sexing.
+11                                  No blood sample obtained for sexing.
+12                                             No blood sample obtained.
+13                                        Not enough blood for isotopes.
+14                                        Not enough blood for isotopes.
+15                                                                  &lt;NA&gt;
+16                                        Not enough blood for isotopes.
+17                                                                  &lt;NA&gt;
+18                                                                  &lt;NA&gt;
+19                                                                  &lt;NA&gt;
+20                                                                  &lt;NA&gt;
+21                                                                  &lt;NA&gt;
+22                                                                  &lt;NA&gt;
+23                                                                  &lt;NA&gt;
+24                                                                  &lt;NA&gt;
+25                                                                  &lt;NA&gt;
+26                                                                  &lt;NA&gt;
+27                                                                  &lt;NA&gt;
+28                                                                  &lt;NA&gt;
+29                                 Nest never observed with full clutch.
+30                                 Nest never observed with full clutch.
+31                                                                  &lt;NA&gt;
+32                                                                  &lt;NA&gt;
+33                                                                  &lt;NA&gt;
+34                                                                  &lt;NA&gt;
+35                                                                  &lt;NA&gt;
+36                                                                  &lt;NA&gt;
+37                                                                  &lt;NA&gt;
+38                                                                  &lt;NA&gt;
+39                                 Nest never observed with full clutch.
+40  Nest never observed with full clutch. Not enough blood for isotopes.
+41                                                                  &lt;NA&gt;
+42                                        Not enough blood for isotopes.
+43                                                                  &lt;NA&gt;
+44                                                                  &lt;NA&gt;
+45                                                                  &lt;NA&gt;
+46                                                                  &lt;NA&gt;
+47                                        Not enough blood for isotopes.
+48        Sexing primers did not amplify. Not enough blood for isotopes.
+49                                                                  &lt;NA&gt;
+50                                                                  &lt;NA&gt;
+51                                                                  &lt;NA&gt;
+52                                                                  &lt;NA&gt;
+53                                                                  &lt;NA&gt;
+54                                                                  &lt;NA&gt;
+55                                                                  &lt;NA&gt;
+56                                                                  &lt;NA&gt;
+57                                                                  &lt;NA&gt;
+58                                                                  &lt;NA&gt;
+59                                                                  &lt;NA&gt;
+60                                                                  &lt;NA&gt;
+61                                                                  &lt;NA&gt;
+62                                                                  &lt;NA&gt;
+63                                                                  &lt;NA&gt;
+64                                                                  &lt;NA&gt;
+65                                                                  &lt;NA&gt;
+66                                                                  &lt;NA&gt;
+67                                                                  &lt;NA&gt;
+68                                                                  &lt;NA&gt;
+69                                 Nest never observed with full clutch.
+70                                 Nest never observed with full clutch.
+71                                                                  &lt;NA&gt;
+72                                                                  &lt;NA&gt;
+73                                                                  &lt;NA&gt;
+74                                                                  &lt;NA&gt;
+75                                                                  &lt;NA&gt;
+76                                                                  &lt;NA&gt;
+77                                                                  &lt;NA&gt;
+78                                                                  &lt;NA&gt;
+79                                                                  &lt;NA&gt;
+80                                                                  &lt;NA&gt;
+81                                                                  &lt;NA&gt;
+82                                                                  &lt;NA&gt;
+83                                                                  &lt;NA&gt;
+84                                                                  &lt;NA&gt;
+85                                                                  &lt;NA&gt;
+86                                                                  &lt;NA&gt;
+87                                                                  &lt;NA&gt;
+88                                                                  &lt;NA&gt;
+89                                                                  &lt;NA&gt;
+90                                                                  &lt;NA&gt;
+91                                                                  &lt;NA&gt;
+92                                                                  &lt;NA&gt;
+93                                                                  &lt;NA&gt;
+94                                                                  &lt;NA&gt;
+95                                                                  &lt;NA&gt;
+96                                                                  &lt;NA&gt;
+97                                                                  &lt;NA&gt;
+98                                                                  &lt;NA&gt;
+99                                                                  &lt;NA&gt;
+100                                                                 &lt;NA&gt;
+101                                                                 &lt;NA&gt;
+102                                                                 &lt;NA&gt;
+103                                                                 &lt;NA&gt;
+104                                                                 &lt;NA&gt;
+105                                                                 &lt;NA&gt;
+106                                                                 &lt;NA&gt;
+107                                                                 &lt;NA&gt;
+108                                                                 &lt;NA&gt;
+109                                                                 &lt;NA&gt;
+110                                                                 &lt;NA&gt;
+111                                                                 &lt;NA&gt;
+112                                                                 &lt;NA&gt;
+113                                                                 &lt;NA&gt;
+114                                                                 &lt;NA&gt;
+115                                                                 &lt;NA&gt;
+116                                                                 &lt;NA&gt;
+117                                                                 &lt;NA&gt;
+118                                                                 &lt;NA&gt;
+119                                                                 &lt;NA&gt;
+120                                                                 &lt;NA&gt;
+121                                Nest never observed with full clutch.
+122                                Nest never observed with full clutch.
+123                                                                 &lt;NA&gt;
+124                                                                 &lt;NA&gt;
+125                                                                 &lt;NA&gt;
+126                                                                 &lt;NA&gt;
+127                                                                 &lt;NA&gt;
+128                                                                 &lt;NA&gt;
+129                                                                 &lt;NA&gt;
+130                                                                 &lt;NA&gt;
+131                                Nest never observed with full clutch.
+132                                Nest never observed with full clutch.
+133                                                                 &lt;NA&gt;
+134                                                                 &lt;NA&gt;
+135                                                                 &lt;NA&gt;
+136                                                                 &lt;NA&gt;
+137                                                                 &lt;NA&gt;
+138                                                                 &lt;NA&gt;
+139                                Nest never observed with full clutch.
+140                                Nest never observed with full clutch.
+141                                                                 &lt;NA&gt;
+142                                                                 &lt;NA&gt;
+143                                                                 &lt;NA&gt;
+144                                                                 &lt;NA&gt;
+145                                                                 &lt;NA&gt;
+146                                                                 &lt;NA&gt;
+147                                                                 &lt;NA&gt;
+148                                                                 &lt;NA&gt;
+149                                                                 &lt;NA&gt;
+150                                                                 &lt;NA&gt;
+151                                                                 &lt;NA&gt;
+152                                                                 &lt;NA&gt;
+153                                                                 &lt;NA&gt;
+154                                                                 &lt;NA&gt;
+155                                                                 &lt;NA&gt;
+156                                                                 &lt;NA&gt;
+157                                                                 &lt;NA&gt;
+158                                                                 &lt;NA&gt;
+159                                                                 &lt;NA&gt;
+160                                                                 &lt;NA&gt;
+161                                                                 &lt;NA&gt;
+162                                                                 &lt;NA&gt;
+163                                Nest never observed with full clutch.
+164                                Nest never observed with full clutch.
+165                                                                 &lt;NA&gt;
+166                                                                 &lt;NA&gt;
+167                                                                 &lt;NA&gt;
+168                                                                 &lt;NA&gt;
+169                                                                 &lt;NA&gt;
+170                                                                 &lt;NA&gt;
+172                                                                 &lt;NA&gt;
+173                                                                 &lt;NA&gt;
+174                                                                 &lt;NA&gt;
+175                                                                 &lt;NA&gt;
+176                                                                 &lt;NA&gt;
+177                                                                 &lt;NA&gt;
+178                                                                 &lt;NA&gt;
+179                                      Sexing primers did not amplify.
+180                                                                 &lt;NA&gt;
+181                                                                 &lt;NA&gt;
+182                                                                 &lt;NA&gt;
+183                                       Not enough blood for isotopes.
+184                                                                 &lt;NA&gt;
+185                                                                 &lt;NA&gt;
+186                                                                 &lt;NA&gt;
+187                                                                 &lt;NA&gt;
+188                                                                 &lt;NA&gt;
+189                                                                 &lt;NA&gt;
+190                                                                 &lt;NA&gt;
+191                                                                 &lt;NA&gt;
+192                                                                 &lt;NA&gt;
+193                                Nest never observed with full clutch.
+194                                Nest never observed with full clutch.
+195                                                                 &lt;NA&gt;
+196                                                                 &lt;NA&gt;
+197                                                                 &lt;NA&gt;
+198                                                                 &lt;NA&gt;
+199                                Nest never observed with full clutch.
+200                                Nest never observed with full clutch.
+201                                                                 &lt;NA&gt;
+202                                                                 &lt;NA&gt;
+203                                                                 &lt;NA&gt;
+204                                                                 &lt;NA&gt;
+205                                                                 &lt;NA&gt;
+206                                                                 &lt;NA&gt;
+207                                                                 &lt;NA&gt;
+208                                                                 &lt;NA&gt;
+209                                                                 &lt;NA&gt;
+210                                                                 &lt;NA&gt;
+211                                                                 &lt;NA&gt;
+212                                                                 &lt;NA&gt;
+213                                                                 &lt;NA&gt;
+214                                                                 &lt;NA&gt;
+215                                                                 &lt;NA&gt;
+216                                                                 &lt;NA&gt;
+217                                                                 &lt;NA&gt;
+218                                                                 &lt;NA&gt;
+219                                      Sexing primers did not amplify.
+220                                                                 &lt;NA&gt;
+222                                                                 &lt;NA&gt;
+223                                                                 &lt;NA&gt;
+224                                                                 &lt;NA&gt;
+225                                                                 &lt;NA&gt;
+226                                                                 &lt;NA&gt;
+227                                                                 &lt;NA&gt;
+228                                                                 &lt;NA&gt;
+229                                                                 &lt;NA&gt;
+230                                                                 &lt;NA&gt;
+231                                                                 &lt;NA&gt;
+232                                                                 &lt;NA&gt;
+233                                                                 &lt;NA&gt;
+234                                                                 &lt;NA&gt;
+235                                                                 &lt;NA&gt;
+236                                                                 &lt;NA&gt;
+237                                                                 &lt;NA&gt;
+238                                                                 &lt;NA&gt;
+239                                                                 &lt;NA&gt;
+240                                                                 &lt;NA&gt;
+241                                                                 &lt;NA&gt;
+242                                                                 &lt;NA&gt;
+243                                                                 &lt;NA&gt;
+244                                                                 &lt;NA&gt;
+245                                                                 &lt;NA&gt;
+246                                                                 &lt;NA&gt;
+247                                                                 &lt;NA&gt;
+248                                                                 &lt;NA&gt;
+249                                                                 &lt;NA&gt;
+250                                                                 &lt;NA&gt;
+251                                                                 &lt;NA&gt;
+252                                                                 &lt;NA&gt;
+253                                                                 &lt;NA&gt;
+254                                                                 &lt;NA&gt;
+255                                                                 &lt;NA&gt;
+256                                                                 &lt;NA&gt;
+257                                      Sexing primers did not amplify.
+258                                                                 &lt;NA&gt;
+259                                                                 &lt;NA&gt;
+260                                                                 &lt;NA&gt;
+261                                                                 &lt;NA&gt;
+262                                                                 &lt;NA&gt;
+264                                                                 &lt;NA&gt;
+265                                                                 &lt;NA&gt;
+266                                                                 &lt;NA&gt;
+267                                                                 &lt;NA&gt;
+268                                                                 &lt;NA&gt;
+269                                      Sexing primers did not amplify.
+270                                                                 &lt;NA&gt;
+271                                Nest never observed with full clutch.
+273                                                                 &lt;NA&gt;
+274                                                                 &lt;NA&gt;
+275                                                                 &lt;NA&gt;
+276                                                                 &lt;NA&gt;
+277                                Nest never observed with full clutch.
+278                                Nest never observed with full clutch.
+279                                                                 &lt;NA&gt;
+280                                                                 &lt;NA&gt;
+281                                                                 &lt;NA&gt;
+282                                                                 &lt;NA&gt;
+283                                                                 &lt;NA&gt;
+284                                                                 &lt;NA&gt;
+285                                                                 &lt;NA&gt;
+286                                                                 &lt;NA&gt;
+287                                                                 &lt;NA&gt;
+288                                                                 &lt;NA&gt;
+289                                                                 &lt;NA&gt;
+290                                                                 &lt;NA&gt;
+291                                                                 &lt;NA&gt;
+292                                                                 &lt;NA&gt;
+293                                Nest never observed with full clutch.
+294                                Nest never observed with full clutch.
+295                                                                 &lt;NA&gt;
+296                                                                 &lt;NA&gt;
+297                                                                 &lt;NA&gt;
+298                                                                 &lt;NA&gt;
+299                                Nest never observed with full clutch.
+300                                Nest never observed with full clutch.
+301                                Nest never observed with full clutch.
+302                                Nest never observed with full clutch.
+303                                Nest never observed with full clutch.
+304                                Nest never observed with full clutch.
+305                                                                 &lt;NA&gt;
+306                                                                 &lt;NA&gt;
+307                                                                 &lt;NA&gt;
+308                                                                 &lt;NA&gt;
+309                                                                 &lt;NA&gt;
+310                                                                 &lt;NA&gt;
+311                                                                 &lt;NA&gt;
+312                                                                 &lt;NA&gt;
+313                                                                 &lt;NA&gt;
+314                                                                 &lt;NA&gt;
+315                                Nest never observed with full clutch.
+316                                Nest never observed with full clutch.
+317                                                                 &lt;NA&gt;
+318                                                                 &lt;NA&gt;
+319                                                                 &lt;NA&gt;
+320                                                                 &lt;NA&gt;
+321                                                                 &lt;NA&gt;
+322                                                                 &lt;NA&gt;
+323                                                                 &lt;NA&gt;
+324                                                                 &lt;NA&gt;
+325                                                                 &lt;NA&gt;
+326                                                                 &lt;NA&gt;
+327                                                                 &lt;NA&gt;
+328                                                                 &lt;NA&gt;
+329                                                                 &lt;NA&gt;
+330                                                                 &lt;NA&gt;
+331                                                                 &lt;NA&gt;
+332                                                                 &lt;NA&gt;
+333                                                                 &lt;NA&gt;
+334                                                                 &lt;NA&gt;
+335                                                                 &lt;NA&gt;
+336                                                                 &lt;NA&gt;
+337                                  No delta15N data received from lab.
+338                                                                 &lt;NA&gt;
+339                                                                 &lt;NA&gt;
+340                                                                 &lt;NA&gt;
+341                                Nest never observed with full clutch.
+342                                Nest never observed with full clutch.
+343                                                                 &lt;NA&gt;
+344                                                                 &lt;NA&gt;</code></pre>
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
