@@ -56,6 +56,9 @@ cl[ cl == "missing" ] <- NA
 # coerce to numeric
 cl <- as.numeric(cl)  
 d1$`Culmen Length (mm)` <- cl
+# check to see if it's fixed
+skimr::skim(d1)
+hist(d1$`Culmen Length (mm)`)
 
 ## ---- cleandata3.1 --------
 d2 <- d1 
@@ -65,6 +68,10 @@ cl[ !is.na(cl) & cl>300 ]
 cl[ !is.na(cl) & cl>300 ] <- cl[ !is.na(cl) & cl>300 ]/10  
 
 d2$`Culmen Length (mm)` <- cl
+
+# check
+skimr::skim(d2)
+hist(d2$`Culmen Length (mm)`)
 
 ## ---- cleandata4 --------
 # Get rid of masses which are too tiny to be adults by replacing them with NA and then dropping
@@ -76,6 +83,12 @@ mm[ mm < 100 ] <- NA
 nas <- which( is.na(mm) )
 
 d3 <- d3[ -nas, ]
+
+# check
+skimr::skim(d3)
+hist(d3$`Body Mass (g)`)
+
+plot(d3$`Body Mass (g)`, d3$`Culmen Length (mm)`)
 
 ## ---- cleandata5 --------
 # Make Species, Sex, Island categorical variables
@@ -108,6 +121,9 @@ ggplot(d3, aes(x=Sex))+geom_bar()
 
 # removing useless columns studyName, Stage
 d4 <- subset(d3, select = -c(studyName, Stage))
+
+# check
+skimr::skim(d4)
 
 ## ---- savedata --------
 processeddata <- d4      # change if you did more steps

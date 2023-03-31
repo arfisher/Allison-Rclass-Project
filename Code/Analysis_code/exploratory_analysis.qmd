@@ -1,0 +1,123 @@
+---
+title: "Analysis script"
+author: "Allison Fisher"
+date: "03/31/2023"
+output: html_document
+---
+
+
+This Quarto file loads the cleaned Palmer Penguins data and does some initial analysis. I find this step very helpful for seeing what results you have to work with for your talk or paper/final report.
+
+Some of what is written below is for you. I would like you to modify this quarto file to produce a document customized for your analysis and written to explain your thinking in your data analysis so feel free to modify as much as you wish.
+
+It is worth taking a minute to reflect on where we are in the data analysis workflow. The purpose of the previous processing document was to document data cleaning and processing in preparation for analysis. You saw that as part of the cleaning and processing step, we already had to explore the data somewhat to understand how to clean it. In general, as you explore, you find more things that need cleaning. As you clean, you find more to explore.
+
+# The need to document your workflow
+
+Although we broke our workflow in this project into cleaning and analysis steps, depending on your project, it may be more logical to divide the scripts in other ways. The organization should naturally reflect the workflow.
+
+In rather clean datasets at times it might make more sense to combine the cleaning and exploring code parts into a single R or Quarto file. _But if you do have real errors to fix, you will want to carefully document cleaning steps_, and probably not redo the cleaning each time you want to get a bit further on your data exploration and analysis. Itʻs a lot of baggage to carry around and also errors might creep in if you are keeping code in your script that you are not actively working on.
+
+When there are natural breaks in the workflow (i.e., when you close the door on cleaning or on a first analysis), it can be a good idea to have start a new script because once you clean your data, you will have a new starting point for all of your downstream analyses (and not look back at the really raw data, unless you want to change your mind about some of the cleaning - thus the need for keeping an original raw data file and documenting all the steps).
+
+This can also come up when you have a multi-stage analysis. In very complex analyses, it can make a lot of sense to have separate scripts for major analyses or workflow steps. As always, use your jugement, and be intentional about your organization. Clean organization = clear thinking.
+
+
+# Analysis
+
+If you did a good job in the previous step, you should have a pretty good idea of the structure of the data.
+
+For this part of the project, develop three questions and use your R skills to answer them. Begin by producing a summary table of the data that could be included in a future paper. You should produce plots or tables and/or statistics or model fits to address your questions.
+
+# Setup
+
+Load the R script to begin analysis.
+
+```{r }
+#| cache = FALSE
+knitr::read_chunk('statistical_analysis.R')
+```
+
+Require packages and filepaths.
+
+```{r setup}
+#| message: FALSE
+#| warning: FALSE
+```
+
+Load custom function which pastes the path to the output files.
+
+```{r functions}
+```
+
+Load in the processed data from Project1 as a .rds file
+
+```{r loaddata}
+```
+
+# Creating a summary table
+
+In order to present the reader or listener with an overview of the data in a digestible way, a summary table must be created. This includes sample size (N) for all variables and additional basic statsistics (counts, means, and standard errors) for continuous data.
+
+I used skimr to produce a summary tibble and then coerced it into a data frame. Then I looked at the variables automatically generated to see which elements to include or ignore. I added a column for "N" by counting the number of rows and subtracting the number of missing values to find out how many samples each variable has.
+
+```{r, summarize}
+```
+
+## Select columns for a final summary table
+
+I grabbed only the columns of interest (variable name, N, mean, SD, and counts) and changed SD to SE by dividing by the square root of the sample size.
+
+I changed the names to be nicer than the skim output and set the number of digits per entry to 2.
+
+```{r summary.table, results="asis"}
+```
+This is saved as an .rds file.
+
+
+# How to complete a clutch?
+
+I have an idea that clutch completion (observation of a nest with full clutch, i.e., 2 eggs) can tell us about fitness of individuals. Let's find out what factors are assosciated with clutch completion.
+
+Do more massive penguins have more clutch success?
+
+```{r mass_clutch_boxplot}
+```
+```{r mass_clutch_density}
+```
+
+It seems those with successful clutches may have slightly higher mass.
+Let's do a t-test to see if this is significant.
+```{r mass_clutch_ttest}
+```
+And it is! Good to know
+
+Now, which species have more clutch completion?
+
+```{r species_clutch_plot}
+```
+It looks like Gentoo is most successful followed by Adelie with Chinstrap having least completion.
+Let's see if this is significant with ANOVA. I am converting the clutch completion (yes/no) variable to binary so it has a numerical representation in this test.
+
+```{r clutchcompletion_species_aov}
+```
+So they do have different amounts of complete clutches
+
+But we know mass has an effect on clutch completion.
+Let's see if the species have different masses.
+
+```{r mass_species_boxplot}
+```
+And let's see if it's significant with ANOVA
+
+```{r mass_species_aov}
+```
+And it is again.
+
+So those with successful clutches have higher masses and species have different levels of clutch completion ... but species have different masses. This means that by lumping all the species together when looking at mass, we may be missing the big picture of the effect of mass on clutch completion within each species.
+
+Let's see a density plot of clutch success by mass with species as a facet.
+```{r mass_species_clutch_density}
+```
+Now we can see that while more massive Gentoos and Chinstraps have more complete clutches, mid-sized Adelies are actually more likely to have complete clutches. They actually have less success at higher masses.
+This is an interesting pattern about mass and reproductive fitness across species which we wouldn't have seen if it weren't for breaking down this distinction. 
