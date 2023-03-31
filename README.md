@@ -6,7 +6,7 @@ This is my repo for Project 1 & 2 for ZOOl710 Spring 2023.
 
 2023-02-16 First release with Data and Code folders with materials for data cleaning and initial exploration.
 2023-03-03 Project 1 - data cleaning and exploratory plots finished
-2023-03-21 Project 2 - Analysis code updated exploring what factors effect clutch completion, results in Results directory. No products yet
+2023-03-21 Project 2 - Analysis code updated exploring what factors effect clutch completion, results in Results directory. No products yet, still need to fix up a bunch of READMEs from this project and last
 # Acknowledgement
 
  This template was cloned and modified from <https://github.com/andreashandel/dataanalysis-template> and mbutler's version <https://github.com/mbutler808/Project-template.git>
