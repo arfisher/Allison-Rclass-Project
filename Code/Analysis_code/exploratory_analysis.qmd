@@ -6,30 +6,7 @@ output: html_document
 ---
 
 
-This Quarto file loads the cleaned Palmer Penguins data and does some initial analysis. I find this step very helpful for seeing what results you have to work with for your talk or paper/final report.
-
-Some of what is written below is for you. I would like you to modify this quarto file to produce a document customized for your analysis and written to explain your thinking in your data analysis so feel free to modify as much as you wish.
-
-It is worth taking a minute to reflect on where we are in the data analysis workflow. The purpose of the previous processing document was to document data cleaning and processing in preparation for analysis. You saw that as part of the cleaning and processing step, we already had to explore the data somewhat to understand how to clean it. In general, as you explore, you find more things that need cleaning. As you clean, you find more to explore.
-
-# The need to document your workflow
-
-Although we broke our workflow in this project into cleaning and analysis steps, depending on your project, it may be more logical to divide the scripts in other ways. The organization should naturally reflect the workflow.
-
-In rather clean datasets at times it might make more sense to combine the cleaning and exploring code parts into a single R or Quarto file. _But if you do have real errors to fix, you will want to carefully document cleaning steps_, and probably not redo the cleaning each time you want to get a bit further on your data exploration and analysis. Itʻs a lot of baggage to carry around and also errors might creep in if you are keeping code in your script that you are not actively working on.
-
-When there are natural breaks in the workflow (i.e., when you close the door on cleaning or on a first analysis), it can be a good idea to have start a new script because once you clean your data, you will have a new starting point for all of your downstream analyses (and not look back at the really raw data, unless you want to change your mind about some of the cleaning - thus the need for keeping an original raw data file and documenting all the steps).
-
-This can also come up when you have a multi-stage analysis. In very complex analyses, it can make a lot of sense to have separate scripts for major analyses or workflow steps. As always, use your jugement, and be intentional about your organization. Clean organization = clear thinking.
-
-
-# Analysis
-
-If you did a good job in the previous step, you should have a pretty good idea of the structure of the data.
-
-For this part of the project, develop three questions and use your R skills to answer them. Begin by producing a summary table of the data that could be included in a future paper. You should produce plots or tables and/or statistics or model fits to address your questions.
-
-# Setup
+This Quarto file loads the cleaned Palmer Penguins data and does some initial analysis.
 
 Load the R script to begin analysis.
 
@@ -120,4 +97,4 @@ Let's see a density plot of clutch success by mass with species as a facet.
 ```{r mass_species_clutch_density}
 ```
 Now we can see that while more massive Gentoos and Chinstraps have more complete clutches, mid-sized Adelies are actually more likely to have complete clutches. They actually have less success at higher masses.
-This is an interesting pattern about mass and reproductive fitness across species which we wouldn't have seen if it weren't for breaking down this distinction. 
+This is an interesting pattern about mass and reproductive fitness across species which we wouldn't have seen if it weren't for breaking down this distinction.

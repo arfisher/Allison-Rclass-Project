@@ -88,7 +88,6 @@ ggsave(filename = addpath("mass_clutch_density.png", results_path), plot=p)
 
 ## ---- mass_clutch_ttest ----
 ttest <- with(dat, t.test(`Body Mass (g)` ~ ClutchCompletion))
-ttest
 
 saveRDS(ttest, file = addpath("mass_clutch_ttest.rds", results_path))
 
